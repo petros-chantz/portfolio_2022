@@ -99,6 +99,7 @@ export const Navbar = () => {
               <p className="self-end text-xl font-light tracking-wide text-white xl:text-2xl">
                 petros.chantz [at] gmail [dot] com
               </p>
+
               <div className="flex flex-row self-end gap-10">
                 {Icons.map((icon: any, index: number) => {
                   return (
