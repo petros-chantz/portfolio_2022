@@ -48,7 +48,7 @@ export const Navbar = () => {
             <p className="self-center text-3xl font-medium tracking-wide text-white md:text-[40px]">
               petros chantzopoulos
             </p>
-            <div className="justify-center hidden gap-3 lg:flex lg:flex-row">
+            {/* <div className="justify-center hidden gap-3 lg:flex lg:flex-row">
               <p className="text-xl text-white font-extralight lg:tracking-wide">
                 creative technologist
               </p>
@@ -58,7 +58,7 @@ export const Navbar = () => {
               <p className="text-xl text-white font-extralight lg:tracking-wide">
                 interaction designer
               </p>
-            </div>
+            </div> */}
           </div>
         </Link>
         <div className="flex justify-center ">
