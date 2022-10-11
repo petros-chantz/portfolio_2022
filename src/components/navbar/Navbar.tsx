@@ -1,9 +1,9 @@
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/solid";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Github from "../assets/social_icons/Github";
-import LinkedIn from "../assets/social_icons/LinkedIn";
-import Twitter from "../assets/social_icons/Twitter";
+import Github from "../../assets/social_icons/Github";
+import LinkedIn from "../../assets/social_icons/LinkedIn";
+import Twitter from "../../assets/social_icons/Twitter";
 
 interface IconsProperties {
   title: string;

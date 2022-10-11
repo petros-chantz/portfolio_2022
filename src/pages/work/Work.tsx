@@ -1,7 +1,7 @@
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import React from "react";
 
-import { Navbar } from "../../components/Navbar";
+import { Navbar } from "../../components/navbar/Navbar";
 import { Projects } from "./Projects";
 
 export const Work = () => {
