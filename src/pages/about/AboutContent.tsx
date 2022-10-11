@@ -1,4 +1,4 @@
-import ProfilePhoto from "./../../assets/profile-photo.jpg";
+// import ProfilePhoto from "./../../assets/profile-photo.jpg";
 
 export const AboutContent = () => {
   return (
@@ -6,7 +6,7 @@ export const AboutContent = () => {
       <div className="flex flex-col md:px-52">
         <div className="flex justify-center md:pl-32 md:justify-start">
           <img
-            src={ProfilePhoto}
+            src={""}
             alt="petros"
             className="w-60 md:w-72 lg:w-96 drop-shadow-2xl"
           />
