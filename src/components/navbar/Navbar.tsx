@@ -30,8 +30,6 @@ export const Navbar = () => {
     setOpened(!isOpened);
   };
 
-  console.log(visible);
-
   return visible ? (
     <div className="fixed top-0 left-0 right-0">
       <div className="flex flex-col pt-5 bg-black drop-shadow-3xl">
