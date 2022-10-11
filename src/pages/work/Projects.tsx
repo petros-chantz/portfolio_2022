@@ -4,7 +4,7 @@ import { ProjectData } from "./ProjectData";
 
 export const Projects = () => {
   return (
-    <div className="flex flex-col gap-24 px-10 mt-32 mb-20 lg:px-32 lg:gap-52 md:gap-32 md:mt-52">
+    <div className="flex flex-col gap-24 px-10 mt-32 mb-20 lg:gap-52 md:gap-32 md:mt-52">
       {ProjectData.map(([img, title, year, url, position]) => (
         <Link
           className={`flex flex-col gap-5 md:w-2/3 lg:w-2/4   ${

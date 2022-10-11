@@ -9,14 +9,14 @@ export const Work = () => {
     <React.Fragment>
       <div className="flex flex-col h-screen">
         <Navbar />
-        <div className="flex flex-col gap-10">
-          <div className="flex flex-col-reverse gap-10 px-10 pt-32 xl:gap-20 lg:flex-row">
+        <div className="flex flex-col gap-20">
+          <div className="flex flex-col-reverse gap-10 px-10 pt-32 xl:gap-20 lg:h-3/4 lg:flex-row">
             <img
               src="https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt=""
               className="lg:w-1/2"
             />
-            <div className="flex flex-col gap-10 xl:gap-20">
+            <div className="flex flex-col gap-10 xl:gap-10">
               <h1 className="text-5xl text-white md:text-6xl xl:text-7xl">
                 <span className="block">Bridging the gap</span>
                 <span className="block">bewteen designing</span>
@@ -30,12 +30,12 @@ export const Work = () => {
               </h2>
             </div>
           </div>
-          <div className="justify-center hidden lg:flex ">
+          <div className="justify-end hidden px-10 lg:flex">
             <ChevronDownIcon className="w-10 h-10 text-white" />
           </div>
         </div>
       </div>
-      {/* <Projects /> */}
+      <Projects />
     </React.Fragment>
   );
 };
