@@ -9,17 +9,17 @@
     background-color: black;
   }
 
-  h1 {
-    @apply text-4xl font-semibold md:text-5xl lg:text-7xl xl:text-8xl tracking-wider;
-  }
+  // h1 {
+  //   @apply text-4xl font-semibold md:text-5xl lg:text-7xl xl:text-8xl tracking-wider;
+  // }
 
-  h2 {
-    @apply text-black font-bold text-4xl md:text-5xl lg:text-6xl tracking-wide lg:leading-normal italic;
-  }
+  // h2 {
+  //   @apply text-black font-bold text-4xl md:text-5xl lg:text-6xl tracking-wide lg:leading-normal italic;
+  // }
 
-  h6 {
-    @apply text-white font-thin text-xl md:text-2xl lg:text-4xl tracking-wide;
-  }
+  // h6 {
+  //   @apply text-white font-thin text-xl md:text-2xl lg:text-4xl tracking-wide;
+  // }
 }
 
 .paragraph_text {
