@@ -6,7 +6,7 @@ export const Hero = () => {
         <h1>Bridging the gap between designing & developing.</h1>
         <div className="w-1/3 border-t-2 border-white"></div>
         <div className="flex flex-col">
-          <h2>
+          <h2 className="font-light">
             Helping teams & organisations deliver rich meaningful experiences.
           </h2>
         </div>

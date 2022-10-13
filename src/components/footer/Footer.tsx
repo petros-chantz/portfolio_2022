@@ -41,16 +41,14 @@ export const Footer = () => {
   return (
     <footer className="flex flex-col gap-5 px-10 py-20 lg:pl-52 lg:w-2/3">
       <div className="w-32 pb-5 border-t-2 border-t-white"></div>
-      <p className="text-3xl font-medium text-white">
+      <h2 className="font-medium text-white ">
         {Titles[Math.floor(Math.random() * Titles.length)]}
-      </p>
-      <p className="pb-10 text-3xl font-light text-white">Get it touch!</p>
+      </h2>
+      <h3 className="pb-10 font-light text-white">Get it touch!</h3>
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-5 ">
-          <p className="text-xl text-white ">
-            petros.chantz [at] gmail [dot] com
-          </p>
-          <p className="text-xl text-white ">+31 6513 two 14 nine 0</p>
+          <p>petros.chantz [at] gmail [dot] com</p>
+          <p>+31 6513 two 14 nine 0</p>
         </div>
 
         <div className="flex flex-row gap-8 pt-10">
