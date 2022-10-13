@@ -14,7 +14,7 @@
   }
 
   h2 {
-    @apply text-3xl font-normal text-white md:text-4xl xl:text-5xl;
+    @apply text-3xl font-normal leading-tight md:leading-tight xl:leading-tight text-white md:text-4xl xl:text-5xl;
   }
 
   h3 {
@@ -29,7 +29,7 @@
     @apply flex flex-col py-10;
 
     &--title {
-      @apply self-center text-2xl font-normal tracking-wide text-white md:text-3xl;
+      @apply self-center text-2xl font-normal tracking-wide text-white;
     }
 
     &--icon {

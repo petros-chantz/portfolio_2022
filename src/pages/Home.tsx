@@ -7,15 +7,15 @@ import { Projects } from "./work/Projects";
 
 export const Home = () => {
   return (
-    <React.Fragment>
-      <main>
-        <div className="flex flex-col h-screen">
-          <Navbar />
-          <Hero />
-        </div>
-        <Projects />
-      </main>
-      <Footer />
-    </React.Fragment>
+    // <React.Fragment>
+    //   <main>
+    <div className="flex flex-col h-screen">
+      <Navbar />
+      <Hero />
+    </div>
+    //     <Projects />
+    //   </main>
+    //   <Footer />
+    // </React.Fragment>
   );
 };

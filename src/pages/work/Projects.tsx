@@ -13,7 +13,11 @@ export const Projects = () => {
           }`}
           to={url}
         >
-          <img src={img} alt={`project-${title}`} className="" />
+          <img
+            src={img}
+            alt={`project-${title}`}
+            className="hover:opacity-100 opacity-80"
+          />
           <div className="flex flex-row justify-between">
             <div className="flex flex-row gap-5">
               <p className="text-white">{title}</p>

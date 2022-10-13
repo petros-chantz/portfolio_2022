@@ -6,6 +6,9 @@ module.exports = {
       screens: {
         desktop: "2000px",
       },
+      height: {
+        95: "95%",
+      },
     },
   },
   plugins: [],
