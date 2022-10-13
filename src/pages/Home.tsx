@@ -1,8 +1,9 @@
 import React from "react";
+import { Footer } from "../components/footer/Footer";
 
-import { Navbar } from "../../components/navbar/Navbar";
+import { Navbar } from "../components/navbar/Navbar";
 import { Hero } from "./Hero";
-import { Projects } from "./Projects";
+import { Projects } from "./work/Projects";
 
 export const Home = () => {
   return (
@@ -12,6 +13,7 @@ export const Home = () => {
         <Hero />
       </div>
       <Projects />
+      <Footer />
     </React.Fragment>
   );
 };
