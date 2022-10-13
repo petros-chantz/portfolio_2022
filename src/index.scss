@@ -13,19 +13,16 @@
     @apply text-5xl leading-tight text-white lg:leading-tight xl:leading-tight lg:text-6xl xl:text-7xl;
   }
 
-  //page-section
   h2 {
+    @apply text-4xl font-normal text-white md:text-5xl xl:text-6xl;
   }
 
-  //footer
   h3 {
+    @apply text-3xl font-normal text-white md:text-4xl xl:text-5xl;
   }
 
   h4 {
-    @apply text-2xl font-light text-white md:text-3xl xl:text-4xl;
-  }
-
-  p {
+    @apply text-2xl font-normal text-white md:text-3xl xl:text-4xl;
   }
 
   .navbar {

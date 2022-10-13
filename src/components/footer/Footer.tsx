@@ -39,7 +39,7 @@ const Icons: IconsProperties[] = [
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col gap-5 px-10 py-20 lg:pl-52 lg:w-2/3">
+    <footer className="flex flex-col gap-5 px-10 py-20 lg:pl-52 lg:w-2/3">
       <div className="w-32 pb-5 border-t-2 border-t-white"></div>
       <p className="text-3xl font-medium text-white">
         {Titles[Math.floor(Math.random() * Titles.length)]}
@@ -68,6 +68,6 @@ export const Footer = () => {
           })}
         </div>
       </div>
-    </div>
+    </footer>
   );
 };

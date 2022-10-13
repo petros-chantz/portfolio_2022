@@ -8,11 +8,13 @@ import { Projects } from "./work/Projects";
 export const Home = () => {
   return (
     <React.Fragment>
-      <div className="flex flex-col h-screen">
-        <Navbar />
-        <Hero />
-      </div>
-      <Projects />
+      <main>
+        <div className="flex flex-col h-screen">
+          <Navbar />
+          <Hero />
+        </div>
+        <Projects />
+      </main>
       <Footer />
     </React.Fragment>
   );

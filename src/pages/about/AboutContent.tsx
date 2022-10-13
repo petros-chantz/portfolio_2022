@@ -2,7 +2,7 @@
 
 export const AboutContent = () => {
   return (
-    <div className="flex flex-col px-10 pt-20 gap-52">
+    <main className="flex flex-col px-10 pt-20 gap-52">
       <div className="flex flex-col md:px-52">
         <div className="flex justify-center md:pl-32 md:justify-start">
           <img
@@ -56,6 +56,6 @@ export const AboutContent = () => {
         </p>
         <p className=" paragraph_text--base">+31 65213490</p>
       </div>
-    </div>
+    </main>
   );
 };

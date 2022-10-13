@@ -79,22 +79,22 @@ export const Navbar = () => {
   // );
 
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <div className="flex flex-row justify-between px-10">
         <Link to="/" relative="path">
-          <p className="navbar--title">petros chantzopoulos</p>
+          <h6 className="navbar--title">petros chantzopoulos</h6>
         </Link>
         <div className="flex self-center justify-center">
-          <button onClick={HandleOpen}>
+          <button onClick={HandleOpen} type={"button"}>
             {isOpened ? (
-              <MinusIcon className="navbar--icon" />
+              <MinusIcon className="navbar--icon" aria-hidden="true" />
             ) : (
-              <PlusIcon className="navbar--icon" />
+              <PlusIcon className="navbar--icon" aria-hidden="false" />
             )}
           </button>
         </div>
       </div>
       {isOpened ? <NavbarList /> : ""}
-    </div>
+    </nav>
   );
 };

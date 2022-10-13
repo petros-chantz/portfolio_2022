@@ -21,7 +21,7 @@ export const Projects = () => {
             <div className="flex flex-row gap-5">
               <p className="text-white">{title}</p>
               <div className="flex justify-center pl-2 border-l-2 border-gray-500">
-                <p className="text-gray-500 font-extralight"> {year}</p>
+                <p className="text-gray-400 font-extralight"> {year}</p>
               </div>
             </div>
             <ArrowUpRightIcon className="self-center w-5 h-5 text-white" />
