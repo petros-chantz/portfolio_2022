@@ -8,6 +8,49 @@
     font-family: "Inter", sans-serif;
     background-color: black;
   }
+
+  h1 {
+    @apply text-5xl leading-tight text-white lg:leading-tight xl:leading-tight lg:text-6xl xl:text-7xl;
+  }
+
+  //page-section
+  h2 {
+  }
+
+  //footer
+  h3 {
+  }
+
+  h4 {
+    @apply text-2xl font-light text-white md:text-3xl xl:text-4xl;
+  }
+
+  p {
+  }
+
+  .navbar {
+    @apply flex flex-col py-10 bg-black;
+
+    &--title {
+      @apply self-center text-2xl font-normal tracking-wide text-white md:text-3xl;
+    }
+
+    &--icon {
+      @apply w-10 h-10 text-white self-center;
+    }
+
+    &--list {
+      @apply absolute z-10 flex flex-col self-end w-full h-screen bg-black/60 top-32 backdrop-blur-lg;
+
+      &--link {
+        @apply self-end text-5xl font-light tracking-wide text-white xl:text-6xl;
+      }
+
+      &--text {
+        @apply self-end text-xl font-light tracking-wide text-white xl:text-2xl;
+      }
+    }
+  }
 }
 
 // .paragraph_text {

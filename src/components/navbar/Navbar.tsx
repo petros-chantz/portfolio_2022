@@ -79,21 +79,17 @@ export const Navbar = () => {
   // );
 
   return (
-    <div className="flex flex-col py-10 bg-black">
+    <div className="navbar">
       <div className="flex flex-row justify-between px-10">
         <Link to="/" relative="path">
-          <div className="flex justify-center h-full gap-5 md:flex-col">
-            <p className="self-center text-2xl font-normal tracking-wide text-white md:text-3xl">
-              petros chantzopoulos
-            </p>
-          </div>
+          <p className="navbar--title">petros chantzopoulos</p>
         </Link>
-        <div className="flex justify-center ">
+        <div className="flex self-center justify-center">
           <button onClick={HandleOpen}>
             {isOpened ? (
-              <MinusIcon className="w-10 h-10 text-white" />
+              <MinusIcon className="navbar--icon" />
             ) : (
-              <PlusIcon className="w-10 h-10 text-white" />
+              <PlusIcon className="navbar--icon" />
             )}
           </button>
         </div>
