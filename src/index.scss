@@ -22,7 +22,7 @@
   }
 
   p {
-    @apply text-xl lg:text-2xl text-white;
+    @apply text-xl lg:text-2xl text-white lg:leading-relaxed;
   }
 
   .navbar {

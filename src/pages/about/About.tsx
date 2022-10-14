@@ -1,39 +1,36 @@
 export const About = () => {
   return (
-    <div className="flex flex-col h-screen gap-10 px-10 py-20 my-10">
-      <div className="flex flex-col gap-5 lg:flex-row">
-        <div className="flex flex-col lg:w-2/3">
-          <h1>Hey! I'm Petros!</h1>
-          <h2 className="font-thin">
-            {" "}
-            I am a <span className="font-medium">
-              Creative Technologist
-            </span>{" "}
-            and an <span className="font-medium">Interaction Designer</span>
-          </h2>
-        </div>
+    <div className="flex flex-col gap-10 px-10 py-20 my-10 lg:my-32 lg:px-32">
+      <div className="flex flex-col gap-5">
+        <h1>Hey! I'm Petros!</h1>
         <img
           src="https://images.pexels.com/photos/840916/pexels-photo-840916.jpeg?auto=compress&cs=tinysrgb&w=600"
           alt=""
+          className="md:w-2/3 lg:w-2/4"
         />
+        <div className="flex flex-col gap-5 pt-20 md:gap-10 lg:w-2/3 desktop:w-2/4">
+          <h3>Connecting the physical with the digital world.</h3>
+          <p className="font-light text-gray-400 lg:text-justify">
+            As a Creative Technologist and an Interaction Designer I research,
+            explore, prototype and develop new modalities of interactions with
+            code. I love translating (often) abstract and ambiguous
+            user/stakeholder needs and wishes into straightforward interaction
+            requirements for tech teams. My work is multidisciplinary and
+            diverse as are the projects, topics and teams I work in.
+          </p>
+
+          <div className="flex flex-col pt-10">
+            <h3 className="self-start">Currently,</h3>
+            <h3 className="self-start pt-2">I work at APS Group.</h3>
+            <p className="self-start pt-10 font-light text-gray-400 lg:text-justify">
+              There, I'm leading design research initiatives and bridge the gap
+              between UX/UI design and frontend development. As a UX Developer,
+              I help deliver new product features and make sure every
+              interaction is accessible and responsive for our users.
+            </p>
+          </div>
+        </div>
       </div>
-      <h3>
-        My interests lies in the connection between the physical and digital
-        world.
-      </h3>
-      <p>
-        I research, explore, prototype and develop new modalities of
-        interactions. I use code to explore my interactions and I follow
-        research through design and experience prototyping methodologies.
-      </p>
-      <p>
-        I love translating (often) abstract and ambiguous user/stakeholder needs
-        and wishes into straightforward interaction requirements for tech teams.
-        My work is multidisciplinary and diverse as are the projects, topics and
-        teams I work in.
-      </p>
-      <h3>Currently,</h3>
-      <h3>I work at APS Group</h3>
     </div>
   );
 };

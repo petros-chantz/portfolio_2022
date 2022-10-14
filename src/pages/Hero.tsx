@@ -7,11 +7,11 @@ export const Hero = () => {
           Bridging the gap between{" "}
           <span className="md:block">
             designing{" "}
-            <span className="hidden text-gray-500 font-extralight md:inline-block">
+            <span className="hidden font-normal text-gray-500 md:inline-block">
               -
             </span>{" "}
-            <span className="text-gray-500 font-extralight">&</span>{" "}
-            <span className="hidden text-gray-500 font-extralight md:inline-block">
+            <span className="font-normal text-gray-500">&</span>{" "}
+            <span className="hidden font-normal text-gray-500 md:inline-block">
               -
             </span>{" "}
             developing.

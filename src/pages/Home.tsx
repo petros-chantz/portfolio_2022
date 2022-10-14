@@ -9,7 +9,7 @@ export const Home = () => {
     <React.Fragment>
       <Landing />
       <About />
-      {/* <Projects /> */}
+      <Projects />
       <Footer />
     </React.Fragment>
   );
