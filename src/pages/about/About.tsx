@@ -9,24 +9,27 @@ export const About = () => {
           className="md:w-2/3 lg:w-2/4"
         />
         <div className="flex flex-col gap-5 pt-20 md:gap-10 lg:w-2/3 desktop:w-2/4">
-          <h3>Connecting the physical with the digital world.</h3>
-          <p className="font-light text-gray-400 lg:text-justify">
-            As a Creative Technologist and an Interaction Designer I research,
-            explore, prototype and develop new modalities of interactions with
-            code. I love translating (often) abstract and ambiguous
-            user/stakeholder needs and wishes into straightforward interaction
-            requirements for tech teams. My work is multidisciplinary and
-            diverse as are the projects, topics and teams I work in.
+          <h3>
+            I'm interested in the connection between the physical and the
+            digital world.
+          </h3>
+          <p className="font-light text-gray-400 ">
+            I research, explore, prototype and develop new modalities of
+            interactions with code. I love translating (often) abstract and
+            ambiguous user/stakeholder needs and wishes into straightforward
+            interaction requirements for tech teams. I work within
+            multidisciplinary and diverse teams and projects.
           </p>
 
           <div className="flex flex-col pt-10">
             <h3 className="self-start">Currently,</h3>
             <h3 className="self-start pt-2">I work at APS Group.</h3>
-            <p className="self-start pt-10 font-light text-gray-400 lg:text-justify">
+            <p className="self-start pt-10 font-light text-gray-400 ">
               There, I'm leading design research initiatives and bridge the gap
               between UX/UI design and frontend development. As a UX Developer,
-              I help deliver new product features and make sure every
-              interaction is accessible and responsive for our users.
+              I help deliver new product features to our SaaS products and make
+              sure every interaction is accessible and responsive for all of our
+              users.
             </p>
           </div>
         </div>

@@ -37,7 +37,6 @@ export const NavbarList = () => {
       <div className="flex flex-col self-end w-5/6 gap-10 px-10 my-20 h-2/3">
         <div className="flex flex-col gap-10">
           {[
-            ["about", "/about"],
             ["experience", "/experience"],
             ["vision", "/vision"],
           ].map(([title, url], index: number) => (

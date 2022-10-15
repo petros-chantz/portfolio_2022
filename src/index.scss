@@ -10,11 +10,11 @@
   }
 
   h1 {
-    @apply text-5xl leading-tight text-white lg:leading-tight xl:leading-tight lg:text-6xl xl:text-7xl;
+    @apply text-7xl leading-tight text-white font-normal lg:leading-tight xl:leading-tight lg:text-6xl xl:text-8xl;
   }
 
   h2 {
-    @apply text-3xl font-normal leading-tight md:leading-tight xl:leading-tight text-white md:text-4xl xl:text-5xl;
+    @apply text-2xl font-normal leading-tight md:leading-tight xl:leading-tight text-white md:text-4xl xl:text-3xl;
   }
 
   h3 {

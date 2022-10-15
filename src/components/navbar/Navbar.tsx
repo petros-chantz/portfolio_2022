@@ -1,4 +1,4 @@
-import { MinusIcon, PlusIcon } from "@heroicons/react/24/solid";
+import { Bars2Icon, MinusIcon, PlusIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { NavbarList } from "./NavbarList";
@@ -89,7 +89,7 @@ export const Navbar = () => {
             {isOpened ? (
               <MinusIcon className="navbar--icon" aria-hidden="true" />
             ) : (
-              <PlusIcon className="navbar--icon" aria-hidden="false" />
+              <Bars2Icon className="navbar--icon" aria-hidden="false" />
             )}
           </button>
         </div>
