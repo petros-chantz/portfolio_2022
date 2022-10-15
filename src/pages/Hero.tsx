@@ -1,4 +1,28 @@
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import { useState } from "react";
+import { animated, useTransition, config } from "react-spring";
+
+const Mount = () => {
+  const [show, set] = useState<boolean>(false);
+  const transitions = useTransition(show, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+    reverse: show,
+    delay: 1000,
+    config: config.molasses,
+    onRest: () => set(!show),
+  });
+  return transitions(
+    (styles, item) =>
+      item && (
+        <animated.div className="flex justify-center" style={styles}>
+          <ChevronDownIcon className="self-center w-10 h-10 text-white" />
+        </animated.div>
+      )
+  );
+};
+
 export const Hero = () => {
   return (
     <section className="flex flex-col h-full px-10 py-10">
@@ -22,10 +46,7 @@ export const Hero = () => {
           </span>
         </h1>
       </div>
-
-      <div className="flex justify-center ">
-        <ChevronDownIcon className="self-center w-10 h-10 text-white" />
-      </div>
+      {Mount()}
     </section>
   );
 };
