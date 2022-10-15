@@ -1,9 +1,9 @@
-import { ChevronDownIcon, PlusIcon } from "@heroicons/react/24/solid";
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
 export const Hero = () => {
   return (
     <section className="flex flex-col h-full px-10 py-10">
       <div className="flex justify-center h-95">
-        <h1 className="self-center hidden md:inline-block">
+        <h1 className="self-center hidden lg:inline-block">
           Delivering rich meaningful
           <span className="block">experiences by connecting </span>
           <span className="block">
@@ -12,10 +12,12 @@ export const Hero = () => {
             <span className="font-bold">technology</span>.
           </span>
         </h1>
-        <h1 className="self-center text-start md:hidden">
+        <h1 className="self-center lg:hidden">
           Connecting{" "}
-          <span className="">
-            <span className="font-bold">design</span> &{" "}
+          <span className="block">
+            <span className="block">
+              <span className="font-bold">design</span> &{" "}
+            </span>
             <span className="font-bold">technology</span>.
           </span>
         </h1>
