@@ -1,4 +1,5 @@
 import { Bars2Icon, MinusIcon, PlusIcon } from "@heroicons/react/24/solid";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { NavbarList } from "./NavbarList";
@@ -28,6 +29,11 @@ export const Navbar = () => {
 
   const HandleOpen = () => {
     setOpened(!isOpened);
+  };
+
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
   };
 
   // return visible ? (
@@ -84,7 +90,11 @@ export const Navbar = () => {
         <Link to="/" relative="path">
           <h6 className="navbar--title">petros chantzopoulos</h6>
         </Link>
-        <div className="flex self-center justify-center">
+        <motion.div
+          className="flex self-center justify-center"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
           <button onClick={HandleOpen} type={"button"}>
             {isOpened ? (
               <MinusIcon
@@ -98,7 +108,7 @@ export const Navbar = () => {
               />
             )}
           </button>
-        </div>
+        </motion.div>
       </div>
       {isOpened ? <NavbarList /> : ""}
     </nav>
