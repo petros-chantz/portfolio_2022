@@ -33,31 +33,28 @@ const Icons: IconsProperties[] = [
 
 export const NavbarList = () => {
   return (
-    <div className="absolute z-10 flex flex-col self-end w-full h-screen bg-black/60 top-32 backdrop-blur-lg">
+    <div className="navbar--list">
       <div className="flex flex-col self-end w-5/6 gap-10 px-10 my-20 h-2/3">
         <div className="flex flex-col gap-10">
           {[
-            ["about", "/about"],
             ["experience", "/experience"],
             ["vision", "/vision"],
           ].map(([title, url], index: number) => (
             <Link to={url} relative="path" className="self-end" key={index}>
-              <button className="self-end text-5xl font-light tracking-wide text-white xl:text-6xl">
-                {title}
-              </button>
+              <button className="navbar--list--link">{title}</button>
             </Link>
           ))}
           <a
             href="https://medium.com/@petros.chantz"
             target="_blank"
             rel="noopener noreferrer"
-            className="self-end text-5xl font-light tracking-wide text-white xl:text-6xl"
+            className="navbar--list--link"
           >
             writing
           </a>
         </div>
         <div className="flex flex-col gap-10 pt-10">
-          <p className="self-end text-xl font-light tracking-wide text-white xl:text-2xl">
+          <p className="navbar--list--text">
             petros.chantz [at] gmail [dot] com
           </p>
 

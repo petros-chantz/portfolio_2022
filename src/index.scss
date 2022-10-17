@@ -9,68 +9,100 @@
     background-color: black;
   }
 
-  // h1 {
-  //   @apply text-4xl font-semibold md:text-5xl lg:text-7xl xl:text-8xl tracking-wider;
-  // }
-
-  // h2 {
-  //   @apply text-black font-bold text-4xl md:text-5xl lg:text-6xl tracking-wide lg:leading-normal italic;
-  // }
-
-  // h6 {
-  //   @apply text-white font-thin text-xl md:text-2xl lg:text-4xl tracking-wide;
-  // }
-}
-
-.paragraph_text {
-  @apply text-white;
-
-  &--small {
-    @extend .paragraph_text;
-    @apply text-base text-justify leading-6;
+  h1 {
+    @apply text-7xl leading-tight text-white font-light xl:leading-tight xl:text-8xl;
   }
 
-  &--base {
-    @extend .paragraph_text;
-    @apply text-lg xl:text-2xl font-normal xl:leading-10 tracking-wide;
+  h2 {
+    @apply text-5xl leading-tight text-white font-light xl:leading-tight xl:text-6xl;
   }
 
-  &--large {
-    @extend .paragraph_text;
-    @apply text-3xl lg:text-4xl font-medium lg:leading-relaxed;
-  }
-}
-
-.splash {
-  &--name {
-    @apply text-white self-center font-medium text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl tracking-wider;
+  h3 {
+    @apply text-3xl leading-tight text-white font-light xl:leading-tight xl:text-4xl;
   }
 
-  &--title {
-    @apply text-white self-center text-lg md:text-2xl xl:text-3xl 2xl:text-4xl tracking-wider font-thin;
-  }
-}
-
-.socialIcons {
-  @apply active:opacity-70;
-
-  &--twitter {
-    @extend .socialIcons;
-    @layer hover:fill-twitter;
+  h6 {
+    @apply text-xl lg:text-2xl font-light lg:leading-relaxed;
   }
 
-  &--github {
-    @extend .socialIcons;
-    @layer hover:fill-github;
+  p {
+    @apply text-xl lg:text-2xl font-light lg:leading-relaxed text-slate-400;
   }
 
-  &--linkedIn {
-    @extend .socialIcons;
-    @layer hover:fill-linkedIn;
-  }
+  .navbar {
+    @apply flex flex-col py-10;
 
-  &--email {
-    @extend .socialIcons;
-    @layer hover:fill-email;
+    &--title {
+      @apply self-center text-2xl font-normal tracking-wide text-white;
+    }
+
+    &--icon {
+      @apply w-10 h-10 text-white self-center;
+    }
+
+    &--list {
+      @apply absolute z-10 flex flex-col self-end w-full h-screen bg-black/60 top-32 backdrop-blur-lg;
+
+      &--link {
+        @apply self-end text-5xl font-light tracking-wide text-white xl:text-6xl;
+      }
+
+      &--text {
+        @apply self-end text-xl font-light tracking-wide text-white xl:text-2xl;
+      }
+    }
   }
 }
+
+// .paragraph_text {
+//   @apply text-white;
+
+//   &--small {
+//     @extend .paragraph_text;
+//     @apply text-base text-justify leading-6;
+//   }
+
+//   &--base {
+//     @extend .paragraph_text;
+//     @apply text-lg xl:text-2xl font-normal xl:leading-10 tracking-wide;
+//   }
+
+//   &--large {
+//     @extend .paragraph_text;
+//     @apply text-3xl lg:text-4xl font-medium lg:leading-relaxed;
+//   }
+// }
+
+// .splash {
+//   &--name {
+//     @apply text-white self-center font-medium text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl tracking-wider;
+//   }
+
+//   &--title {
+//     @apply text-white self-center text-lg md:text-2xl xl:text-3xl 2xl:text-4xl tracking-wider font-thin;
+//   }
+// }
+
+// .socialIcons {
+//   @apply active:opacity-70;
+
+//   &--twitter {
+//     @extend .socialIcons;
+//     @layer hover:fill-twitter;
+//   }
+
+//   &--github {
+//     @extend .socialIcons;
+//     @layer hover:fill-github;
+//   }
+
+//   &--linkedIn {
+//     @extend .socialIcons;
+//     @layer hover:fill-linkedIn;
+//   }
+
+//   &--email {
+//     @extend .socialIcons;
+//     @layer hover:fill-email;
+//   }
+// }
