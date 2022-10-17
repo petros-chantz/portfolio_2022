@@ -1,4 +1,4 @@
-import { FooterIcons } from "../../data/FooterIconsData";
+import { Icons } from "../../data/IconsData";
 import { FooterTitles } from "../../data/FooterTitlesData";
 
 export const Footer = () => {
@@ -8,7 +8,7 @@ export const Footer = () => {
       <h2 className="font-medium text-white ">
         {FooterTitles[Math.floor(Math.random() * FooterTitles.length)]}
       </h2>
-      <h3 className="pb-10 font-light text-white">Get it touch!</h3>
+      <h3 className="pb-10 font-light text-white">Get in touch!</h3>
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-5 ">
           <p className="text-white">petros.chantz [at] gmail [dot] com</p>
@@ -16,14 +16,14 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-row gap-8 pt-10">
-          {FooterIcons.map((icon: any, index: number) => {
+          {Icons.map((icon: any, index: number) => {
             return (
               <a
                 href={icon.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                key={index}
-                aria-label=""
+                key={`item-${index}`}
+                aria-label="social media links"
               >
                 {icon.img}
               </a>

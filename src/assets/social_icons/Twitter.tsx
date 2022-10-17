@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const Twitter = () => {
   return (
     <svg
@@ -6,8 +8,7 @@ const Twitter = () => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 248 204"
-      // eslint-disable-next-line react/style-prop-object
-      className="w-8 h-8 lg:w-10 lg:h-10 socialIcons--twitter"
+      className="socialIcons"
       fill="white"
       xmlSpace="preserve"
     >
