@@ -7,13 +7,13 @@ interface ProjectProperties {
 
 export const ProjectData: ProjectProperties[] = [
   {
-    title: "linkedIn",
+    title: "Digital Fabrication Workshop ",
     link: "https://www.linkedin.com/in/petroschantz/",
     img: "https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=800",
     year: 2020,
   },
   {
-    title: "linkedIn",
+    title: "UI Experiments",
     link: "https://www.linkedin.com/in/petroschantz/",
     img: "https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=800",
     year: 2018,

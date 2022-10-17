@@ -23,6 +23,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={index}
+                aria-label=""
               >
                 {icon.img}
               </a>

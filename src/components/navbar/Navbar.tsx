@@ -87,9 +87,15 @@ export const Navbar = () => {
         <div className="flex self-center justify-center">
           <button onClick={HandleOpen} type={"button"}>
             {isOpened ? (
-              <MinusIcon className="navbar--icon" aria-hidden="true" />
+              <MinusIcon
+                className="navbar--icon"
+                aria-label="close navigation menu"
+              />
             ) : (
-              <Bars2Icon className="navbar--icon" aria-hidden="false" />
+              <Bars2Icon
+                className="navbar--icon"
+                aria-label="open navigation menu"
+              />
             )}
           </button>
         </div>
