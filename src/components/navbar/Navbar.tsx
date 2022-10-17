@@ -1,6 +1,6 @@
-import { Bars2Icon, MinusIcon, PlusIcon } from "@heroicons/react/24/solid";
+import { MinusIcon, PlusIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { NavbarList } from "./NavbarList";
 
@@ -47,8 +47,7 @@ export const Navbar = () => {
         </Link>
         <motion.div
           className="flex self-center justify-center"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+          whileTap={{ rotate: 360, opacity: [1, 0, 1] }}
         >
           <button onClick={HandleOpen} type={"button"}>
             {isOpened ? (
@@ -57,7 +56,7 @@ export const Navbar = () => {
                 aria-label="close navigation menu"
               />
             ) : (
-              <Bars2Icon
+              <PlusIcon
                 className="navbar--icon"
                 aria-label="open navigation menu"
               />

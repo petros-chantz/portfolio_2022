@@ -1,11 +1,17 @@
 import { LockClosedIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import { Icons } from "../../data/IconsData";
+import { motion } from "framer-motion";
 
 export const NavbarList = () => {
   return (
     <div className="navbar--list">
-      <div className="flex flex-col self-end w-5/6 gap-10 px-10 my-20 h-2/3">
+      <motion.div
+        className="flex flex-col self-end w-5/6 gap-10 px-10 my-20 h-2/3"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="flex flex-col gap-10">
           {[
             ["experience", "/experience"],
@@ -63,7 +69,7 @@ export const NavbarList = () => {
             })}
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
