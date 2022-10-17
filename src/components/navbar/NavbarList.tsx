@@ -1,35 +1,6 @@
+import { LockClosedIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
-import Github from "../../assets/social_icons/Github";
-import LinkedIn from "../../assets/social_icons/LinkedIn";
-import Twitter from "../../assets/social_icons/Twitter";
-
-interface IconsProperties {
-  title: string;
-  link: string;
-  img: React.ReactNode;
-  type: "social" | "email" | "link";
-}
-
-const Icons: IconsProperties[] = [
-  {
-    title: "linkedIn",
-    link: "https://www.linkedin.com/in/petroschantz/",
-    img: <LinkedIn />,
-    type: "social",
-  },
-  {
-    title: "github",
-    link: "https://github.com/petros-chantz",
-    img: <Github />,
-    type: "social",
-  },
-  {
-    title: "github",
-    link: "https://github.com/petros-chantz",
-    img: <Twitter />,
-    type: "link",
-  },
-];
+import { Icons } from "../../data/IconsData";
 
 export const NavbarList = () => {
   return (
@@ -38,10 +9,29 @@ export const NavbarList = () => {
         <div className="flex flex-col gap-10">
           {[
             ["experience", "/experience"],
-            ["vision", "/vision"],
-          ].map(([title, url], index: number) => (
-            <Link to={url} relative="path" className="self-end" key={index}>
-              <button className="navbar--list--link">{title}</button>
+            ["vision", "/vision", "ready"],
+          ].map(([title, url, ready], index: number) => (
+            <Link
+              to={url}
+              relative="path"
+              className={`flex self-end justify-center gap-5 ${
+                ready ? null : "pointer-events-none"
+              }`}
+              key={`${index}-navbar`}
+            >
+              {ready ? null : (
+                <LockClosedIcon
+                  className="self-center text-slate-400 w-7 h-7"
+                  aria-label="locked page"
+                />
+              )}
+              <p
+                className={`navbar--list--link ${
+                  ready ? null : "text-slate-400 hover:opacity-80"
+                }`}
+              >
+                {title}
+              </p>
             </Link>
           ))}
           <a

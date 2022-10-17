@@ -11,7 +11,11 @@ export const Projects = () => {
         {ProjectData.sort((a, b) => b.year - a.year).map(
           ({ img, title, year, link }) => {
             return (
-              <Link className={`flex flex-col gap-5 group`} to={link}>
+              <Link
+                className={`flex flex-col gap-5 group`}
+                to={link}
+                key={`${title}-project-item`}
+              >
                 <motion.img
                   src={img}
                   alt={`project-${title}`}

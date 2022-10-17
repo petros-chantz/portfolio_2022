@@ -10,30 +10,30 @@
   }
 
   h1 {
-    @apply text-7xl leading-tight text-white font-light xl:leading-tight xl:text-8xl;
+    @apply text-7xl leading-tight text-white font-light xl:leading-tight xl:text-8xl selection:bg-white selection:text-black;
   }
 
   h2 {
-    @apply text-5xl leading-tight text-white font-light xl:leading-tight xl:text-6xl;
+    @apply text-5xl leading-tight text-white font-light xl:leading-tight xl:text-6xl selection:bg-white selection:text-black;
   }
 
   h3 {
-    @apply text-3xl leading-tight text-white font-light xl:leading-tight xl:text-4xl;
+    @apply text-3xl leading-tight text-white font-light xl:leading-tight xl:text-4xl selection:bg-white selection:text-black;
   }
 
   h6 {
-    @apply text-xl lg:text-2xl font-light lg:leading-relaxed;
+    @apply text-xl lg:text-2xl font-light lg:leading-relaxed selection:bg-white selection:text-black;
   }
 
   p {
-    @apply text-xl lg:text-2xl font-light lg:leading-relaxed text-slate-400;
+    @apply text-xl lg:text-2xl font-light lg:leading-relaxed text-slate-400 selection:bg-white selection:text-black;
   }
 
   .navbar {
     @apply flex flex-col py-10;
 
     &--title {
-      @apply self-center text-2xl font-normal tracking-wide text-white;
+      @apply self-center text-2xl font-normal z-10 tracking-wide text-white;
     }
 
     &--icon {
@@ -41,68 +41,19 @@
     }
 
     &--list {
-      @apply absolute z-10 flex flex-col self-end w-full h-screen bg-black/60 top-32 backdrop-blur-lg;
+      @apply absolute z-10 flex flex-col self-end w-full h-screen  bg-black/80 md:bg-black/70 top-[120px] backdrop-blur-lg;
 
       &--link {
-        @apply self-end text-5xl font-light tracking-wide text-white xl:text-6xl;
+        @apply self-end tracking-wide text-7xl leading-tight text-white font-light xl:leading-tight desktop:text-8xl opacity-80 hover:opacity-100;
       }
 
       &--text {
-        @apply self-end text-xl font-light tracking-wide text-white xl:text-2xl;
+        @apply self-end text-xl font-light tracking-wide text-white xl:text-2xl selection:bg-white selection:text-black;
       }
     }
   }
 }
 
-// .paragraph_text {
-//   @apply text-white;
-
-//   &--small {
-//     @extend .paragraph_text;
-//     @apply text-base text-justify leading-6;
-//   }
-
-//   &--base {
-//     @extend .paragraph_text;
-//     @apply text-lg xl:text-2xl font-normal xl:leading-10 tracking-wide;
-//   }
-
-//   &--large {
-//     @extend .paragraph_text;
-//     @apply text-3xl lg:text-4xl font-medium lg:leading-relaxed;
-//   }
-// }
-
-// .splash {
-//   &--name {
-//     @apply text-white self-center font-medium text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl tracking-wider;
-//   }
-
-//   &--title {
-//     @apply text-white self-center text-lg md:text-2xl xl:text-3xl 2xl:text-4xl tracking-wider font-thin;
-//   }
-// }
-
-// .socialIcons {
-//   @apply active:opacity-70;
-
-//   &--twitter {
-//     @extend .socialIcons;
-//     @layer hover:fill-twitter;
-//   }
-
-//   &--github {
-//     @extend .socialIcons;
-//     @layer hover:fill-github;
-//   }
-
-//   &--linkedIn {
-//     @extend .socialIcons;
-//     @layer hover:fill-linkedIn;
-//   }
-
-//   &--email {
-//     @extend .socialIcons;
-//     @layer hover:fill-email;
-//   }
-// }
+.socialIcons {
+  @apply w-8 h-8 lg:w-10 lg:h-10 opacity-80 hover:opacity-100 active:opacity-60;
+}
