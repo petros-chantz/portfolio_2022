@@ -1,6 +1,6 @@
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { ProjectData } from "./ProjectData";
 import { motion } from "framer-motion";
 
@@ -9,12 +9,12 @@ export const Projects = () => {
     <React.Fragment>
       <div className="grid grid-cols-1 gap-20 lg:grid-cols-2">
         {ProjectData.sort((a, b) => b.year - a.year).map(
-          ({ img, title, year, link }) => {
+          ({ img, title, year, urlName, index }) => {
             return (
               <Link
                 className={`flex flex-col gap-5 group`}
-                to={link}
-                key={`${title}-project-item`}
+                to={`/project/${urlName}`}
+                key={index}
               >
                 <motion.img
                   src={img}

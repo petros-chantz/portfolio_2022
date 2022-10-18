@@ -1,19 +1,8 @@
-import {
-  ArrowLeftIcon,
-  ArrowLeftOnRectangleIcon,
-} from "@heroicons/react/24/solid";
 import React from "react";
 import { Exit } from "../../components/exit/Exit";
 import { Footer } from "../../components/footer/Footer";
 import { Navbar } from "../../components/navbar/Navbar";
 import { Paragraph } from "../../components/paragraph/Paragraph";
-
-const keywords = [
-  ["Home", "/dashboard"],
-  ["Team", "/team"],
-  ["Projects", "/projects"],
-  ["Reports", "/reports"],
-];
 
 export const Project = () => {
   return (
@@ -22,7 +11,7 @@ export const Project = () => {
       <section className="flex flex-col px-10 my-32 gap-52 lg:px-32 md:my-20">
         <div className="flex flex-col gap-5 md:w-2/3">
           <h1 className="font-bold">Model Making in the Digital Age</h1>
-          <h2>2022 - Workshop</h2>
+          <h2 className="text-slate-500">2022 - Workshop</h2>
         </div>
         <Paragraph
           h2={false}
