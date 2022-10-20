@@ -1,6 +1,6 @@
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ProjectData } from "./ProjectData";
 import { motion } from "framer-motion";
 

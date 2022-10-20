@@ -5,9 +5,9 @@ import { animated, useTransition, config } from "react-spring";
 const Mount = () => {
   const [show, set] = useState<boolean>(false);
   const transitions = useTransition(show, {
-    from: { opacity: 0 },
+    from: { opacity: 0.2 },
     enter: { opacity: 1 },
-    leave: { opacity: 0 },
+    leave: { opacity: 0.2 },
     reverse: show,
     delay: 1000,
     config: config.molasses,
