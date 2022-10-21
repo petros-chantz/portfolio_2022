@@ -1,17 +1,26 @@
 import React from "react";
+
+import { useParams } from "react-router-dom";
 import { Exit } from "../../components/exit/Exit";
 import { Footer } from "../../components/footer/Footer";
 import { Navbar } from "../../components/navbar/Navbar";
 import { Paragraph } from "../../components/paragraph/Paragraph";
+import { ProjectData } from "./ProjectData";
 
 export const Project = () => {
+  const { title } = useParams();
+  const project = ProjectData.find((project) => project.title === title);
+
+  const index = project?.index;
+  console.log(index);
+
   return (
     <React.Fragment>
       <Navbar />
       <section className="flex flex-col px-10 my-32 gap-52 lg:px-32 md:my-20">
         <div className="flex flex-col gap-5 md:w-2/3">
-          <h1 className="font-bold">Model Making in the Digital Age</h1>
-          <h2 className="text-slate-500">2022 - Workshop</h2>
+          <h1 className="font-bold">{project?.title}</h1>
+          <h2 className="text-slate-500">{`${project?.year} - ${project?.type}`}</h2>
         </div>
         <Paragraph
           h2={false}
@@ -81,7 +90,10 @@ export const Project = () => {
           </p>
         </div>
       </section>
-      <Exit />
+      <Exit
+        previousIndex={index !== undefined ? index - 1 : null}
+        nextIndex={index !== undefined ? index + 1 : null}
+      />
       <Footer />
     </React.Fragment>
   );

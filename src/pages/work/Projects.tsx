@@ -13,7 +13,7 @@ export const Projects = () => {
             return (
               <Link
                 className={`flex flex-col gap-5 group`}
-                to={`/project/${urlName}`}
+                to={`/${title}`}
                 key={index}
               >
                 <motion.img
