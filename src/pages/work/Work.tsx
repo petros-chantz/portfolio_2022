@@ -9,8 +9,8 @@ export const Work = () => {
         <h2>A selection of different multidisciplanary projects.</h2>
       </div>
       <div className="grid grid-cols-1 gap-20 lg:grid-cols-2">
-        {ProjectData.sort((a, b) => b.year - a.year).map((project) => (
-          <ProjectListItem project={project} />
+        {ProjectData.sort((a, b) => b.year - a.year).map((project, index) => (
+          <ProjectListItem project={project} key={index} />
         ))}
       </div>
     </section>
