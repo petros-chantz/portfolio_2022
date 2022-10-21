@@ -1,26 +1,20 @@
 import React, { useState } from "react";
-
 import { useParams } from "react-router-dom";
 import { Exit } from "../../components/exit/Exit";
 import { Footer } from "../../components/footer/Footer";
 import { Navbar } from "../../components/navbar/Navbar";
-import { Paragraph } from "../../components/paragraph/Paragraph";
+import { ProjectData } from "../../data/ProjectData";
 
 export const Project = (props: object) => {
-  // const { routerName } = useParams();
-  // const projectItem = ProjectData.find(
-  //   (project) => project.routerName === routerName
-  // );
-  // const something = project?.index;
-
-  // console.log(ProjectData);
+  const { url } = useParams();
+  const projectItem = ProjectData.find((project) => project.url === url);
 
   return (
     <React.Fragment>
       <Navbar />
       <section className="flex flex-col gap-32 px-10 my-32 md:gap-52 lg:px-32 md:my-20">
         <div className="flex flex-col gap-5 md:w-2/3">
-          <h1 className="font-bold">Experiments</h1>
+          <h1 className="font-bold">{projectItem?.title}</h1>
           <h3 className="text-slate-500">2022 - Master Thesis</h3>
         </div>
         <div className="flex flex-col self-end gap-2 ">

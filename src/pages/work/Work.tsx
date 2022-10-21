@@ -1,4 +1,5 @@
-import { Projects } from "./Projects";
+import { ProjectData } from "../../data/ProjectData";
+import { ProjectListItem } from "./ProjectListItem";
 
 export const Work = () => {
   return (
@@ -7,7 +8,11 @@ export const Work = () => {
         <h1>Work</h1>
         <h2>A selection of different multidisciplanary projects.</h2>
       </div>
-      <Projects />
+      <div className="grid grid-cols-1 gap-20 lg:grid-cols-2">
+        {ProjectData.sort((a, b) => b.year - a.year).map((project) => (
+          <ProjectListItem project={project} />
+        ))}
+      </div>
     </section>
   );
 };
