@@ -1,19 +1,19 @@
-import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-import React from "react";
-import { Link } from "react-router-dom";
-import { ProjectData } from "./ProjectData";
-import { motion } from "framer-motion";
+import { ArrowUpRightIcon } from '@heroicons/react/24/outline';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { ProjectData } from './ProjectData';
+import { motion } from 'framer-motion';
 
 export const Projects = () => {
   return (
     <React.Fragment>
       <div className="grid grid-cols-1 gap-20 lg:grid-cols-2">
         {ProjectData.sort((a, b) => b.year - a.year).map(
-          ({ img, title, year, urlName, index }) => {
+          ({ img, title, year, routerName }, index) => {
             return (
               <Link
                 className={`flex flex-col gap-5 group`}
-                to={`/${title}`}
+                to={`/${routerName}`}
                 key={index}
               >
                 <motion.img
@@ -22,7 +22,7 @@ export const Projects = () => {
                   className="hover:opacity-100 opacity-70"
                   whileHover={{ scale: 1.005 }}
                   whileTap={{ scale: 0.95 }}
-                  transition={{ type: "linear", stiffness: 250, damping: 2 }}
+                  transition={{ type: 'linear', stiffness: 250, damping: 2 }}
                 />
                 <div className="flex flex-row justify-between gap-5">
                   <div className="flex justify-center">

@@ -1,34 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useParams } from "react-router-dom";
 import { Exit } from "../../components/exit/Exit";
 import { Footer } from "../../components/footer/Footer";
 import { Navbar } from "../../components/navbar/Navbar";
 import { Paragraph } from "../../components/paragraph/Paragraph";
-import { ProjectData } from "./ProjectData";
 
-export const Project = () => {
-  const { title } = useParams();
-  const project = ProjectData.find((project) => project.title === title);
+export const Project = (props: object) => {
+  // const { routerName } = useParams();
+  // const projectItem = ProjectData.find(
+  //   (project) => project.routerName === routerName
+  // );
+  // const something = project?.index;
 
-  const index = project?.index;
-  console.log(index);
+  // console.log(ProjectData);
 
   return (
     <React.Fragment>
       <Navbar />
-      <section className="flex flex-col px-10 my-32 gap-52 lg:px-32 md:my-20">
+      <section className="flex flex-col gap-32 px-10 my-32 md:gap-52 lg:px-32 md:my-20">
         <div className="flex flex-col gap-5 md:w-2/3">
-          <h1 className="font-bold">{project?.title}</h1>
-          <h2 className="text-slate-500">{`${project?.year} - ${project?.type}`}</h2>
+          <h1 className="font-bold">Experiments</h1>
+          <h3 className="text-slate-500">2022 - Master Thesis</h3>
         </div>
-        <Paragraph
-          h2={false}
-          h3={false}
-          p={true}
-          pText={"lorem"}
-          position={"left"}
-        />
+        <div className="flex flex-col self-end gap-2 ">
+          <div className="grid md:grid-cols-2 gap-x-5">
+            {[
+              "Interaction Design",
+              "Design Research",
+              "Industrial Design",
+              "Human Computer Interaction",
+              "Interaction Design",
+            ].map((keyword) => (
+              <div className="flex justify-end">
+                <p className="text-white">{keyword}</p>
+              </div>
+            ))}
+          </div>
+          <h4 className="self-end text-slate-500">
+            Technical University of Eindhoven, The Netherlands
+          </h4>
+          <h4 className="self-end text-slate-500">In collanoration with:</h4>
+        </div>
+
         <div className="grid self-end justify-end grid-cols-2 gap-10 md:w-4/5">
           <img
             src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -90,10 +104,7 @@ export const Project = () => {
           </p>
         </div>
       </section>
-      <Exit
-        previousIndex={index !== undefined ? index - 1 : null}
-        nextIndex={index !== undefined ? index + 1 : null}
-      />
+      <Exit />
       <Footer />
     </React.Fragment>
   );
