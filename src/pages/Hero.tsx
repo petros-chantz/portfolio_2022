@@ -5,18 +5,18 @@ import { animated, useTransition, config } from "react-spring";
 const Mount = () => {
   const [show, set] = useState<boolean>(false);
   const transitions = useTransition(show, {
-    from: { opacity: 0.2 },
+    from: { opacity: 0.1 },
     enter: { opacity: 1 },
-    leave: { opacity: 0.2 },
+    leave: { opacity: 0.1 },
     reverse: show,
-    delay: 1000,
+    delay: 1200,
     config: config.molasses,
     onRest: () => set(!show),
   });
   return transitions(
     (styles, item) =>
       item && (
-        <animated.div className="flex justify-center" style={styles}>
+        <animated.div className="flex justify-center h-5" style={styles}>
           <ChevronDownIcon className="self-center w-10 h-10 text-white" />
         </animated.div>
       )

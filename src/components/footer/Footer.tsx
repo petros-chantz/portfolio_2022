@@ -11,8 +11,8 @@ export const Footer = () => {
       <h3 className="pb-10 font-light text-white">Get in touch!</h3>
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-5 ">
-          <p className="text-white">petros.chantz [at] gmail [dot] com</p>
-          <p className="text-white">+31 6513 two 14 nine 0</p>
+          <h4 className="text-white">petros.chantz [at] gmail [dot] com</h4>
+          <h4 className="text-white">+31 6513 two 14 nine 0</h4>
         </div>
 
         <div className="flex flex-row gap-8 pt-10">

@@ -1,4 +1,4 @@
-import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import React from "react";
 import { Link } from "react-router-dom";
 import { ProjectData } from "./ProjectData";
@@ -26,15 +26,15 @@ export const Projects = () => {
                 />
                 <div className="flex flex-row justify-between gap-5">
                   <div className="flex justify-center">
-                    <h6 className="self-center text-slate-400 group-hover:opacity-100 opacity-70 font-extralight">
+                    <h4 className="self-center text-slate-400 group-hover:opacity-100 opacity-70 font-extralight">
                       {year}
-                    </h6>
+                    </h4>
                   </div>
                   <div className="flex flex-row justify-end gap-2">
-                    <h6 className="self-center text-white group-hover:opacity-100 opacity-70">
+                    <h4 className="self-center text-white group-hover:opacity-100 opacity-70">
                       {title}
-                    </h6>
-                    <ArrowUpRightIcon className="self-center w-5 h-5 text-white group-hover:opacity-100 opacity-70" />
+                    </h4>
+                    <ArrowUpRightIcon className="self-center w-4 h-4 text-white group-hover:opacity-100 opacity-70" />
                   </div>
                 </div>
               </Link>

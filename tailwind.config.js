@@ -9,6 +9,7 @@ module.exports = {
 
       height: {
         95: "95%",
+        5: "5%",
       },
     },
   },

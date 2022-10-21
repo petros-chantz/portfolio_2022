@@ -21,7 +21,7 @@
     @apply text-3xl leading-tight text-white font-light xl:leading-tight xl:text-4xl selection:bg-white selection:text-black;
   }
 
-  h6 {
+  h4 {
     @apply text-xl lg:text-2xl font-light lg:leading-relaxed selection:bg-white selection:text-black;
   }
 
@@ -41,10 +41,10 @@
     }
 
     &--list {
-      @apply absolute z-10 flex flex-col self-end w-full h-screen  bg-black/80 md:bg-black/70 top-[120px] backdrop-blur-lg;
+      @apply absolute z-10 flex flex-col self-end w-full h-screen bg-black/80 md:bg-black/70 top-[120px] backdrop-blur-lg;
 
       &--link {
-        @apply self-end tracking-wide text-7xl leading-tight text-white font-light xl:leading-tight desktop:text-8xl opacity-80 hover:opacity-100;
+        @apply self-end tracking-wide text-7xl leading-tight text-white font-light xl:leading-tight desktop:text-8xl;
       }
 
       &--text {
@@ -55,5 +55,5 @@
 }
 
 .socialIcons {
-  @apply w-8 h-8 lg:w-10 lg:h-10 opacity-80 hover:opacity-100 active:opacity-60;
+  @apply w-8 h-8 lg:w-10 lg:h-10;
 }
