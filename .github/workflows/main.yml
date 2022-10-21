@@ -24,8 +24,8 @@ jobs:
           node-version: 14
       - run: npm ci
       - run: npm run build
-      - name: Unit Tests
-        run: npm test
+      # - name: Unit Tests
+      #   run: npm test
       - uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks --delete
