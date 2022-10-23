@@ -53,10 +53,10 @@ export const About = () => {
             <h3 className="self-start">I work at APS Group.</h3>
           </div>
           <p className="self-start">
-            There, I'm leading design research initiatives and bridge the gap
-            between UX/UI design and frontend development. As a UX Developer, I
-            help deliver new product features to our SaaS products and make sure
-            every interaction is accessible and responsive for all of our users.
+            There, I'm working as multidisciplinary designer bridging the gap
+            between UX/UI design and frontend development. I help deliver new
+            product features to our SaaS products and make sure every
+            interaction is accessible and responsive for all of our users.
           </p>
         </div>
       </div>

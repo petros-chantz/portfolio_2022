@@ -1,6 +1,6 @@
 export interface ProjectProperties {
   index: number;
-  url: string;
+  path: string;
   title: string;
   type: string;
   link?: Object;

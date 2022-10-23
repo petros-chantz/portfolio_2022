@@ -6,8 +6,8 @@ import { Navbar } from "../../components/navbar/Navbar";
 import { ProjectData } from "../../data/ProjectData";
 
 export const Project = (props: object) => {
-  const { url } = useParams();
-  const projectItem = ProjectData.find((project) => project.url === url);
+  const { path } = useParams();
+  const projectItem = ProjectData.find((project) => project.path === path);
 
   return (
     <React.Fragment>

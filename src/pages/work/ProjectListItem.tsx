@@ -6,11 +6,11 @@ export const ProjectListItem = (props: any) => {
   return (
     <Link
       className={`flex flex-col gap-5 group`}
-      to={`/${props.project.url}`}
+      to={`/${props.project.path}`}
       key={props.project.index}
     >
       <motion.img
-        src={props.project.img}
+        src={props.project.photos.thumbnail}
         alt={`project-${props.project.title}`}
         className="hover:opacity-100 opacity-70"
         whileHover={{ scale: 1.005 }}
