@@ -61,10 +61,10 @@
 .projectList {
   &--project {
     &--year {
-      @apply self-center text-base md:text-3xl xl:text-4xl text-slate-400 group-hover:opacity-100 opacity-70 font-extralight;
+      @apply self-center text-base md:text-xl xl:text-2xl text-slate-400 group-hover:opacity-100 opacity-70 font-extralight;
     }
     &--title {
-      @apply self-center text-base md:text-3xl xl:text-4xl text-white group-hover:opacity-100 opacity-70;
+      @apply self-center text-base md:text-xl xl:text-2xl text-white group-hover:opacity-100 opacity-70;
     }
   }
 }
