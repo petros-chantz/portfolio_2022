@@ -1,4 +1,5 @@
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { animated, useTransition, config } from "react-spring";
 import { Navbar } from "../components/navbar/Navbar";
@@ -26,10 +27,20 @@ const Mount = () => {
 
 export const Hero = () => {
   return (
-    <div className="flex flex-col h-screen">
+    <motion.div className="flex flex-col h-screen">
       <Navbar />
       <section className="flex flex-col h-full px-10 py-10">
-        <div className="flex justify-center h-95">
+        <motion.div
+          className="flex justify-center h-95"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            type: "linear",
+            stiffness: 300,
+            damping: 2,
+            duration: 3.5,
+          }}
+        >
           <h1 className="self-center hidden lg:inline-block">
             Delivering rich meaningful
             <span className="block">experiences by connecting </span>
@@ -48,9 +59,9 @@ export const Hero = () => {
               <span className="font-bold">technology</span>.
             </span>
           </h1>
-        </div>
+        </motion.div>
         {Mount()}
       </section>
-    </div>
+    </motion.div>
   );
 };

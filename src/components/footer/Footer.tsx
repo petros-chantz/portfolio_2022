@@ -1,9 +1,20 @@
 import { Icons } from "../../data/IconsData";
 import { FooterTitles } from "../../data/FooterTitlesData";
+import { motion } from "framer-motion";
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col gap-5 px-10 py-20 lg:px-32 lg:w-2/3">
+    <motion.footer
+      className="flex flex-col gap-5 px-10 py-20 lg:px-32 lg:w-2/3"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{
+        type: "linear",
+        stiffness: 300,
+        damping: 2,
+        duration: 2,
+      }}
+    >
       <div className="w-1/3 pb-5 border-t-2 border-t-white"></div>
       <h2 className="font-medium text-white ">
         {FooterTitles[Math.floor(Math.random() * FooterTitles.length)]}
@@ -31,6 +42,6 @@ export const Footer = () => {
           })}
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
