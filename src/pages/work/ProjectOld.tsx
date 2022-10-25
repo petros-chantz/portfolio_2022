@@ -5,9 +5,11 @@ import { Footer } from "../../components/footer/Footer";
 import { Navbar } from "../../components/navbar/Navbar";
 import { ProjectData } from "../../data/ProjectData";
 
-export const Project = (props: object) => {
+export const ProjectPage = () => {
   const { path } = useParams();
   const projectItem = ProjectData.find((project) => project.path === path);
+
+  console.log(projectItem);
 
   return (
     <React.Fragment>
@@ -15,7 +17,9 @@ export const Project = (props: object) => {
       <section className="flex flex-col gap-32 px-10 my-32 md:gap-52 lg:px-32 md:my-20">
         <div className="flex flex-col gap-5 md:w-2/3">
           <h1 className="font-bold">{projectItem?.title}</h1>
-          <h3 className="text-slate-500">2022 - Master Thesis</h3>
+          <h3 className="text-slate-500">
+            {projectItem?.year} - {projectItem?.type}
+          </h3>
         </div>
         <div className="flex flex-col self-end gap-2 ">
           <div className="grid md:grid-cols-2 gap-x-5">
@@ -27,7 +31,7 @@ export const Project = (props: object) => {
               "Interaction Design",
             ].map((keyword) => (
               <div className="flex justify-end">
-                <p className="text-white">{keyword}</p>
+                <p className="text-white">{projectItem?.keywords}</p>
               </div>
             ))}
           </div>
