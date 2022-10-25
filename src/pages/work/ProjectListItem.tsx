@@ -19,14 +19,10 @@ export const ProjectListItem = (props: any) => {
       />
       <div className="flex flex-row justify-between gap-5">
         <div className="flex justify-center">
-          <h4 className="self-center text-slate-400 group-hover:opacity-100 opacity-70 font-extralight">
-            {props.project.year}
-          </h4>
+          <h4 className="projectList--project--year">{props.project.year}</h4>
         </div>
         <div className="flex flex-row justify-end gap-2">
-          <h4 className="self-center text-white group-hover:opacity-100 opacity-70">
-            {props.project.title}
-          </h4>
+          <h4 className="projectList--project--title">{props.project.title}</h4>
           <ArrowUpRightIcon className="self-center w-4 h-4 text-white group-hover:opacity-100 opacity-70" />
         </div>
       </div>

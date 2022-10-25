@@ -7,7 +7,7 @@ export const NavbarList = () => {
   return (
     <div className="navbar--list">
       <motion.div
-        className="flex flex-col self-end w-5/6 gap-10 px-10 my-20 h-2/3"
+        className="flex flex-col self-end gap-10 px-10 my-20 md:w-5/6 h-2/3"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -49,7 +49,7 @@ export const NavbarList = () => {
             writing
           </a>
         </div>
-        <div className="flex flex-col gap-10 pt-10">
+        <div className="flex flex-col w-full gap-10 pt-10">
           <p className="navbar--list--text">
             petros.chantz [at] gmail [dot] com
           </p>

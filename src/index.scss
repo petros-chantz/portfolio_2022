@@ -10,11 +10,11 @@
   }
 
   h1 {
-    @apply text-7xl leading-tight text-white font-light xl:leading-tight xl:text-8xl selection:bg-white selection:text-black;
+    @apply text-5xl md:text-7xl leading-tight text-white font-light xl:leading-tight xl:text-8xl selection:bg-white selection:text-black;
   }
 
   h2 {
-    @apply text-5xl leading-tight text-white font-light xl:leading-tight xl:text-6xl selection:bg-white selection:text-black;
+    @apply text-4xl md:text-5xl leading-tight text-white font-light xl:leading-tight xl:text-6xl selection:bg-white selection:text-black;
   }
 
   h3 {
@@ -26,29 +26,29 @@
   }
 
   p {
-    @apply text-xl lg:text-2xl leading-relaxed font-light lg:leading-relaxed text-slate-400 selection:bg-white selection:text-black;
+    @apply text-base md:text-xl lg:text-2xl leading-relaxed font-light lg:leading-relaxed text-slate-400 selection:bg-white selection:text-black;
   }
 
   .navbar {
     @apply flex flex-col py-10;
 
     &--title {
-      @apply self-center text-2xl font-normal z-10 tracking-wide text-white;
+      @apply self-center text-xl md:text-2xl font-normal z-10 tracking-wide text-white;
     }
 
     &--icon {
-      @apply w-10 h-10 text-white self-center;
+      @apply md:w-10 md:h-10 w-7 h-7 text-white self-center;
     }
 
     &--list {
       @apply absolute z-10 flex flex-col self-end w-full h-screen bg-black/80 md:bg-black/70 top-[120px] backdrop-blur-lg;
 
       &--link {
-        @apply self-end tracking-wide text-7xl leading-tight text-white font-light xl:leading-tight desktop:text-8xl;
+        @apply self-end tracking-wide text-5xl md:text-7xl leading-tight text-white font-light xl:leading-tight desktop:text-8xl;
       }
 
       &--text {
-        @apply self-end text-xl font-light tracking-wide text-white xl:text-2xl selection:bg-white selection:text-black;
+        @apply self-end text-base md:text-xl font-light tracking-wide text-white xl:text-2xl selection:bg-white selection:text-black;
       }
     }
   }
@@ -56,4 +56,15 @@
 
 .socialIcons {
   @apply w-8 h-8 lg:w-10 lg:h-10;
+}
+
+.projectList {
+  &--project {
+    &--year {
+      @apply self-center text-base md:text-3xl xl:text-4xl text-slate-400 group-hover:opacity-100 opacity-70 font-extralight;
+    }
+    &--title {
+      @apply self-center text-base md:text-3xl xl:text-4xl text-white group-hover:opacity-100 opacity-70;
+    }
+  }
 }
