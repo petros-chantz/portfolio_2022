@@ -18,7 +18,7 @@ export const ProjectPage = (props: object) => {
       <section className="flex flex-col gap-32 px-10 my-32 md:gap-52 lg:px-32 md:my-20">
         <TitleSection projectItem={projectItem} />
         <Details projectItem={projectItem} />
-        <h3 className="self-start pt-20 lg:w-2/3">{projectItem?.subtitle}</h3>
+        <h3 className="self-start pt-20 lg:w-2/3"></h3>
         <img
           src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt=""
@@ -47,11 +47,11 @@ export const ProjectPage = (props: object) => {
           <div className="flex flex-col gap-20">
             <div className="flex flex-col gap-2">
               <p>In cooperation with</p>
-              <p className="text-white">{projectItem?.collaboration}</p>
+              <p className="text-white"></p>
             </div>
             <div className="flex flex-col gap-2">
               <p>More photos</p>
-              <p className="text-white">{projectItem?.collaboration}</p>
+              <p className="text-white"></p>
             </div>
           </div>
         </div>

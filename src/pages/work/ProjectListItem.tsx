@@ -10,7 +10,7 @@ export const ProjectListItem = (props: any) => {
       key={props.project.index}
     >
       <motion.img
-        src={props.project.photos.thumbnail}
+        src={props.project.thumbnail}
         alt={`project-${props.project.title}`}
         className="hover:opacity-100 opacity-70"
         whileHover={{ scale: 1.005 }}

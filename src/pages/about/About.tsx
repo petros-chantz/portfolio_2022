@@ -1,5 +1,3 @@
-import ProfilePhoto from "../../assets/profile-photo.jpg";
-import ShowMePhoto from "../../assets/about.jpg";
 import { motion } from "framer-motion";
 
 export const About = () => {
@@ -34,7 +32,7 @@ export const About = () => {
         >
           <img
             alt="petros-profile"
-            src={ProfilePhoto}
+            src="assets/profile-photo.jpg"
             className="self-center w-2/3 md:w-2/4 md:self-start"
           />
         </motion.div>
@@ -75,7 +73,7 @@ export const About = () => {
           }}
         >
           <img
-            src={ShowMePhoto}
+            src="assets/about.jpg"
             alt="petros making things"
             className=" md:self-start"
           />
