@@ -5,7 +5,7 @@ export interface ProjectProperties {
   subtitle: string;
   type: string;
   place?: string;
-  time?: string;
+  duration?: string;
   link?: Object;
   photos: Object;
   year: number;
