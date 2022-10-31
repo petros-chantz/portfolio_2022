@@ -10,8 +10,8 @@ export const ProjectData: ProjectProperties[] = [
   },
   {
     index: 3,
-    path: "DesignExperiements",
-    title: "Design Experiments",
+    path: "DigitalDesignExperiements",
+    title: "Digital Design Experiments",
     year: 2022,
     thumbnail: "assets/project_photos/web-experiments-thumbnail.jpg",
   },
