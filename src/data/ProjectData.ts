@@ -6,86 +6,69 @@ export const ProjectData: ProjectProperties[] = [
     path: "MakingWorkshop",
     title: "Model Making in the Digital Age",
     year: 2022,
-    thumbnail: `assets/project_photos/making.jpg`,
-  },
-  {
-    index: 1,
-    path: "APSGroup",
-    title: "APS Group",
-    year: 2022,
-    thumbnail:
-      "https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    thumbnail: `assets/project_photos/making-thumbnail.jpg`,
   },
   {
     index: 3,
     path: "DesignExperiements",
     title: "Design Experiments",
     year: 2022,
-    thumbnail:
-      "https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    thumbnail: "assets/project_photos/web-experiments-thumbnail.jpg",
   },
   {
     index: 4,
     path: "DataDrivenDesign",
     title: "Data Driven Design",
-    year: 2019,
-    thumbnail:
-      "https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    year: 2018,
+    thumbnail: "assets/project_photos/dataDriven-thumbnail.jpg",
   },
   {
     index: 5,
     path: "FutureEveryday",
     title: "Designing the Future Everyday",
-    year: 2019,
-    thumbnail:
-      "https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    year: 2018,
+    thumbnail: "assets/project_photos/future-everyday-thumbnail.jpg",
   },
   {
     index: 6,
     path: "ComposingEverydayRituals",
     title: "Composing Everyday Rituals",
     year: 2018,
-    thumbnail:
-      "https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    thumbnail: "assets/project_photos/rituals-thumbnail.jpg",
   },
   {
     index: 7,
-    path: "ExploratoryMaking",
-    title: "Exploratory Making",
-    year: 2018,
-    thumbnail:
-      "https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    path: "Exploratory Prototyping",
+    title: "Exploratory Prototyping",
+    year: 2019,
+    thumbnail: "assets/project_photos/prototyping-thumbnail.jpg",
   },
   {
     index: 8,
-    path: "Exploratory Prototyping",
-    title: "Exploratory Prototyping",
+    path: "ArticulatingDesignIdentities",
+    title: "Exploring Design Identities",
     year: 2018,
-    thumbnail:
-      "https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    thumbnail: "assets/project_photos/designIdentities-thumbnail.jpg",
   },
   {
     index: 9,
-    path: "ArticulatingDesignIdentities",
-    title: "Articulating Design Identities",
-    year: 2018,
-    thumbnail:
-      "https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  },
-  {
-    index: 10,
     path: "AudioTales",
     title: "AudioTales",
     year: 2017,
-    thumbnail:
-      "https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    thumbnail: "assets/project_photos/audioTales-thumbnail.jpg",
   },
   {
-    index: 11,
+    index: 10,
     path: "FutureRetailExperiences",
     title: "Future Retail Experiences",
     year: 2016,
-    thumbnail:
-      "https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    thumbnail: "assets/project_photos/FBP-thumbnail.jpg",
+  },
+  {
+    index: 11,
+    path: "AsparagusProject",
+    title: "Request for Asparagus",
+    year: 2016,
+    thumbnail: "assets/project_photos/asparagus-thumbnail.jpg",
   },
 ];

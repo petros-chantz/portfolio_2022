@@ -118,10 +118,11 @@ export const About = () => {
             <h3 className="self-start">I work at APS Group.</h3>
           </div>
           <p className="self-start">
-            There, I'm working as a multidisciplinary designer bridging the gap
-            between UX/UI design and frontend development. I help deliver new
-            product features to our SaaS products and make sure every
-            interaction is accessible and responsive for all of our users.
+            There, I'm working as a multidisciplinary designer working along
+            with UX/UI designers and developers on an upcoming SaaS product.
+            help with investigating new product features with our clients and
+            stakeholders as well I make sure every interaction is accessible and
+            responsive in the frontend for all of our users.
           </p>
         </motion.div>
       </div>

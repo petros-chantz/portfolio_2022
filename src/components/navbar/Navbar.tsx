@@ -1,4 +1,4 @@
-import { MinusIcon, PlusIcon } from "@heroicons/react/24/solid";
+import { Bars2Icon, MinusIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -39,7 +39,7 @@ export const Navbar = () => {
                 aria-label="close navigation menu"
               />
             ) : (
-              <PlusIcon
+              <Bars2Icon
                 className="navbar--icon"
                 aria-label="open navigation menu"
               />
