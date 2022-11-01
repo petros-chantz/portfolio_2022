@@ -5,7 +5,7 @@ import { Footer } from "../../components/footer/Footer";
 import { Navbar } from "../../components/navbar/Navbar";
 import { Paragraph } from "../../components/project/Paragraph";
 import { Details } from "../../components/project/Details";
-import { TitleSection } from "../../components/project/TitleSection";
+// import { TitleSection } from "../../components/project/Titles";
 import { ProjectData } from "../../data/ProjectData";
 
 export const ProjectPage = (props: object) => {
@@ -16,7 +16,7 @@ export const ProjectPage = (props: object) => {
     <React.Fragment>
       <Navbar />
       <section className="flex flex-col gap-32 px-10 my-32 md:gap-52 lg:px-32 md:my-20">
-        <TitleSection projectItem={projectItem} />
+        {/* <TitleSection projectItem={projectItem} /> */}
         <Details projectItem={projectItem} />
         <h3 className="self-start pt-20 lg:w-2/3"></h3>
         <img
