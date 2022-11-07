@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ProjectData } from "../../data/ProjectData";
-import { ProjectListItem } from "./ProjectListItem";
+import { WorkItem } from "./WorkItem";
 
 export const Work = () => {
   return (
@@ -20,22 +20,19 @@ export const Work = () => {
         <h1>Work</h1>
         <h2>A selection of different multidisciplanary projects.</h2>
       </motion.div>
-      <motion.div
-        className="grid grid-cols-1 gap-20 lg:grid-cols-2"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{
-          type: "linear",
-          stiffness: 300,
-          damping: 2,
-          duration: 2,
-        }}
-      >
+      <div className="flex flex-col gap-48 pt-20 lg:pt-32 lg:gap-52">
         {ProjectData.sort((a, b) => b.year - a.year).map((project, index) => (
-          <ProjectListItem project={project} key={index} />
+          <WorkItem project={project} key={index} />
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 };
+
+{
+  /* <motion.div className="grid grid-cols-1 gap-20 gap-x-32 gap-y-72 lg:grid-cols-2">
+        {ProjectData.sort((a, b) => b.year - a.year).map((project, index) => (
+          <WorkItem project={project} key={index} />
+        ))}
+      </motion.div> */
+}

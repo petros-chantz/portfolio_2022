@@ -7,6 +7,9 @@ export const ProjectData: ProjectProperties[] = [
     title: "Model Making in the Digital Age",
     year: 2022,
     thumbnail: `assets/project_photos/making-thumbnail.jpg`,
+    position: "end",
+    area: "Workshop",
+    period: "2022 - 7 days",
   },
   {
     index: 3,
@@ -14,6 +17,9 @@ export const ProjectData: ProjectProperties[] = [
     title: "Digital Design Experiments",
     year: 2022,
     thumbnail: "assets/project_photos/web-experiments-thumbnail.jpg",
+    position: "start",
+    area: "Interaction Design",
+    period: "2021 - 2022 ",
   },
   {
     index: 4,
@@ -21,6 +27,9 @@ export const ProjectData: ProjectProperties[] = [
     title: "Data Driven Design",
     year: 2018,
     thumbnail: "assets/project_photos/dataDriven-thumbnail.jpg",
+    position: "end",
+    area: "Interaction Design",
+    period: "2018 - 6 months",
   },
   {
     index: 5,
@@ -28,6 +37,9 @@ export const ProjectData: ProjectProperties[] = [
     title: "Designing the Future Everyday",
     year: 2018,
     thumbnail: "assets/project_photos/future-everyday-thumbnail.jpg",
+    position: "start",
+    area: "Design Research",
+    period: "2018 - 5 months",
   },
   {
     index: 6,
@@ -35,6 +47,9 @@ export const ProjectData: ProjectProperties[] = [
     title: "Composing Everyday Rituals",
     year: 2018,
     thumbnail: "assets/project_photos/rituals-thumbnail.jpg",
+    position: "end",
+    area: "Interaction Design",
+    period: "2018 - 5 months",
   },
   {
     index: 7,
@@ -42,6 +57,9 @@ export const ProjectData: ProjectProperties[] = [
     title: "Exploratory Prototyping",
     year: 2019,
     thumbnail: "assets/project_photos/prototyping-thumbnail.jpg",
+    position: "start",
+    area: "Interaction Design",
+    period: "2018 - 2020",
   },
   {
     index: 8,
@@ -49,6 +67,9 @@ export const ProjectData: ProjectProperties[] = [
     title: "Exploring Design Identities",
     year: 2018,
     thumbnail: "assets/project_photos/designIdentities-thumbnail.jpg",
+    position: "end",
+    area: "Design Research",
+    period: "2018 - 6 months",
   },
   {
     index: 9,
@@ -56,6 +77,9 @@ export const ProjectData: ProjectProperties[] = [
     title: "AudioTales",
     year: 2017,
     thumbnail: "assets/project_photos/audioTales-thumbnail.jpg",
+    position: "start",
+    area: "Interaction Design",
+    period: "2017 - 6 months",
   },
   {
     index: 10,
@@ -63,6 +87,9 @@ export const ProjectData: ProjectProperties[] = [
     title: "Future Retail Experiences",
     year: 2016,
     thumbnail: "assets/project_photos/FBP-thumbnail.jpg",
+    position: "end",
+    area: "Design Research",
+    period: "2016 - 6 months",
   },
   {
     index: 11,
@@ -70,5 +97,8 @@ export const ProjectData: ProjectProperties[] = [
     title: "Request for Asparagus",
     year: 2016,
     thumbnail: "assets/project_photos/asparagus-thumbnail.jpg",
+    position: "start",
+    area: "Product Design",
+    period: "2016 - 1 month",
   },
 ];

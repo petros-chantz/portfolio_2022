@@ -5,10 +5,10 @@ import { Navbar } from "../../components/navbar/Navbar";
 import { Paragraph } from "../../components/project/Paragraph";
 import { Details } from "../../components/project/Details";
 import { Titles } from "../../components/project/Titles";
-import { PhotoCenter } from "../../components/photos/PhotoCenter";
-import { Photo2 } from "../../components/photos/Photo2";
-import { Photo3 } from "../../components/photos/Photo3";
-import { Photo4 } from "../../components/photos/Photo4";
+import { PhotoCenter } from "../../components/project/photos/PhotoCenter";
+import { Photo2 } from "../../components/project/photos/Photo2";
+import { Photo3 } from "../../components/project/photos/Photo3";
+import { Photo4 } from "../../components/project/photos/Photo4";
 
 const PhotosFour = [
   {

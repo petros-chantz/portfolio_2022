@@ -3,5 +3,8 @@ export interface ProjectProperties {
   path: string;
   title: string;
   year: number;
+  period: string;
   thumbnail: string;
+  position: "start" | "end";
+  area: string;
 }
