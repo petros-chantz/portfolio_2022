@@ -18,7 +18,10 @@ export const Work = () => {
         }}
       >
         <h1>Work</h1>
-        <h2>A selection of different multidisciplanary projects.</h2>
+        <h2>
+          A selection of different{" "}
+          <span className="lg:block">multidisciplanary projects.</span>
+        </h2>
       </motion.div>
       <div className="flex flex-col gap-48 pt-20 lg:pt-32 lg:gap-52">
         {ProjectData.sort((a, b) => b.year - a.year).map((project, index) => (
@@ -28,11 +31,3 @@ export const Work = () => {
     </section>
   );
 };
-
-{
-  /* <motion.div className="grid grid-cols-1 gap-20 gap-x-32 gap-y-72 lg:grid-cols-2">
-        {ProjectData.sort((a, b) => b.year - a.year).map((project, index) => (
-          <WorkItem project={project} key={index} />
-        ))}
-      </motion.div> */
-}

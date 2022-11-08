@@ -21,7 +21,7 @@ export const ProjectData: ProjectProperties[] = [
   },
   {
     index: 2,
-    path: "DigitalDesignExperiements",
+    path: "Experiments",
     title: "Digital Design Experiments",
     year: 2022,
     thumbnail: "assets/project_photos/web-experiments-thumbnail.jpg",
@@ -57,7 +57,7 @@ export const ProjectData: ProjectProperties[] = [
   },
   {
     index: 6,
-    path: "Exploratory Prototyping",
+    path: "ExploratoryPrototyping",
     title: "Exploratory Prototyping",
     year: 2019,
     thumbnail: "assets/project_photos/prototyping-thumbnail.jpg",

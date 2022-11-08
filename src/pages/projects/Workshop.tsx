@@ -6,41 +6,21 @@ import { Paragraph } from "../../components/project/Paragraph";
 import { Details } from "../../components/project/Details";
 import { Titles } from "../../components/project/Titles";
 import { PhotoCenter } from "../../components/project/photos/PhotoCenter";
-import { Photo2 } from "../../components/project/photos/Photo2";
 import { Photo3 } from "../../components/project/photos/Photo3";
 import { Photo4 } from "../../components/project/photos/Photo4";
 
-const PhotosFour = [
-  {
-    photo: "assets/project_photos/MakingWorkshop/workshop03.jpg",
-    alt: "something",
-  },
-  {
-    photo: "assets/project_photos/MakingWorkshop/workshop03.jpg",
-    alt: "something",
-  },
-  {
-    photo: "assets/project_photos/MakingWorkshop/workshop03.jpg",
-    alt: "something",
-  },
-  {
-    photo: "assets/project_photos/MakingWorkshop/workshop03.jpg",
-    alt: "something",
-  },
-];
-
-export const MakingWorkshop = (props: object) => {
+export const Workshop = (props: object) => {
   return (
     <React.Fragment>
       <Navbar />
       <section className="flex flex-col gap-32 px-10 my-32 md:gap-52 lg:px-32 md:my-20">
         <Titles
           title="Model Making in the Digital Age"
-          year="2022"
+          year="August 2022"
           type="Workshop"
         />
         <Details
-          keyword="Digital Fabrication"
+          keywords={["something", "somethingels"]}
           company="Atelier La Juntana"
           place="Liencres, Cantabria, Spain"
           time="7 days"
@@ -62,11 +42,14 @@ export const MakingWorkshop = (props: object) => {
           sectionP="lorem"
           position="self-end"
         />
-        <Photo2
-          photoFirst="assets/project_photos/MakingWorkshop/workshop01.jpg"
+
+        <Photo3
+          photoFirst="assets/project_photos/MakingWorkshop/workshop04.jpg"
           photoDescriptionFirst="participants together"
-          photoSecond="assets/project_photos/MakingWorkshop/workshop01.jpg"
+          photoSecond="assets/project_photos/MakingWorkshop/workshop03.jpg"
           photoDescriptionSecond="participants together"
+          photoThird="assets/project_photos/MakingWorkshop/workshop03.jpg"
+          photoDescriptionThird="participants together"
         />
         <Photo3
           photoFirst="assets/project_photos/MakingWorkshop/workshop04.jpg"
@@ -76,7 +59,14 @@ export const MakingWorkshop = (props: object) => {
           photoThird="assets/project_photos/MakingWorkshop/workshop03.jpg"
           photoDescriptionThird="participants together"
         />
-        <Photo4 photos={PhotosFour} />
+        <Paragraph
+          sectionH3="I got familiar with several novel model-making practices.
+          From experiments with resin and clay to metal casting and photo
+          etching."
+          sectionP="lorem"
+          position="self-start"
+        />
+        <Photo4 />
         <Paragraph
           sectionH3="Working with materials again in a physcical enviroment made me think of things."
           sectionP="lorem"
