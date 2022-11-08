@@ -5,6 +5,5 @@ export interface ProjectProperties {
   year: number;
   period: string;
   thumbnail: string;
-  position: "start" | "end";
   area: string;
 }
