@@ -6,7 +6,7 @@ export const ProjectData: ProjectProperties[] = [
     path: "APSGroup",
     title: "APS Group",
     year: 2022,
-    thumbnail: `assets/project_photos/making-thumbnail.jpg`,
+    thumbnail: `assets/project_photos/APS-thumbnail.jpg`,
     area: "Interaction Design & Web Development",
     period: "2021 - Now / 15 months",
   },

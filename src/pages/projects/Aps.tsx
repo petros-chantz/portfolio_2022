@@ -7,6 +7,7 @@ import { Details } from "../../components/project/Details";
 import { Titles } from "../../components/project/Titles";
 import { PhotoCenter } from "../../components/project/photos/PhotoCenter";
 import { PhotoSides } from "../../components/project/photos/PhotoSides";
+import { Photo2 } from "../../components/project/photos/Photo2";
 
 export const Aps = () => {
   return (
@@ -40,18 +41,18 @@ export const Aps = () => {
           position="self-end"
         />
         <PhotoSides
-          photo="assets/project_photos/MakingWorkshop/workshop01.jpg"
-          photoDescription="participants together"
+          photo="assets/project_photos/APS/01.jpg"
+          photoDescription="design research"
           position="lg:self-start"
         />
         <PhotoSides
-          photo="assets/project_photos/MakingWorkshop/workshop01.jpg"
-          photoDescription="participants together"
+          photo="assets/project_photos/APS/02.jpg"
+          photoDescription="design research"
           position="lg:self-end"
         />
         <PhotoSides
-          photo="assets/project_photos/MakingWorkshop/workshop01.jpg"
-          photoDescription="participants together"
+          photo="assets/project_photos/APS/03.jpg"
+          photoDescription="design research"
           position="lg:self-start"
         />
         <Paragraph
@@ -59,23 +60,19 @@ export const Aps = () => {
           sectionP="There, within these 15 months I have helped built real applications for clients and internal systems using the latest frontend development technologies such as React and Microfrontends."
           position="self-start"
         />
-        <PhotoSides
-          photo="assets/project_photos/MakingWorkshop/workshop01.jpg"
+
+        <PhotoCenter
+          photo="assets/project_photos/APS/06.png"
           photoDescription="participants together"
-          position="lg:self-end"
         />
-        <PhotoSides
-          photo="assets/project_photos/MakingWorkshop/workshop01.jpg"
-          photoDescription="participants together"
-          position="lg:self-start"
-        />
-        <PhotoSides
-          photo="assets/project_photos/MakingWorkshop/workshop01.jpg"
-          photoDescription="participants together"
-          position="lg:self-end"
+        <Photo2
+          photoFirst="assets/project_photos/APS/04.png"
+          photoDescriptionFirst="participants together"
+          photoSecond="assets/project_photos/APS/05.jpg"
+          photoDescriptionSecond="participants together"
         />
         <Paragraph
-          sectionH3="Working with materials again in a physcical enviroment made me think of things."
+          sectionH3="Working alongside software developers has helped me gain a solid ground on software development. This experience has further solidify my interest in data, coding and systemic design."
           sectionP="lorem"
           position="self-start"
         />
