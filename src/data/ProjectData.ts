@@ -25,7 +25,7 @@ export const ProjectData: ProjectProperties[] = [
     title: "Digital Design Experiments",
     year: 2022,
     thumbnail: "assets/project_photos/web-experiments-thumbnail.jpg",
-    area: "UX/UI Design & Development",
+    area: "UX/UI Design & Web Development",
     period: "2021 - 2022 ",
   },
   {

@@ -16,16 +16,18 @@ export const WorkItem = (props: any) => {
         <ArrowUpRightIcon className="self-center text-white w-7 h-7 group-hover:opacity-100 opacity-70" />
       </div>
 
-      <div className="overflow-hidden h-3/5">
-        <motion.img
+      <motion.div
+        className="overflow-hidden h-3/5"
+        whileHover={{ scale: 1.005 }}
+        whileTap={{ scale: 0.95 }}
+        transition={{ type: "linear", stiffness: 250, damping: 2 }}
+      >
+        <img
           src={props.project.thumbnail}
           alt={`project-${props.project.title}`}
           className="object-cover object-center hover:opacity-100 opacity-60"
-          whileHover={{ scale: 1.005 }}
-          whileTap={{ scale: 0.95 }}
-          transition={{ type: "linear", stiffness: 250, damping: 2 }}
         />
-      </div>
+      </motion.div>
 
       <div className="flex flex-row justify-between gap-5">
         <div className="flex justify-center">

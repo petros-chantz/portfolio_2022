@@ -32,7 +32,7 @@ export const Aps = () => {
           different in-house SaaS applications.
         </h3>
         <PhotoCenter
-          photo="assets/project_photos/MakingWorkshop/workshop01.jpg"
+          photo="assets/project_photos/APS-thumbnail.jpg"
           photoDescription="participants together"
         />
         <Paragraph
