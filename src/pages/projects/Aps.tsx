@@ -26,18 +26,19 @@ export const Aps = () => {
         />
         <h3 className="self-start pt-20 lg:w-2/3">
           APS Group is a marketing communication company with a strong presence
-          in content creation, marketing production and print managment. I
-          joined APS Group in the role of UX Developer working within the IT
-          Development team. There I'm researching, designing and developing
-          different in-house SaaS applications.
+          in digital and print marketing material production. I joined their IT
+          Development team with a focus on researching, designing and developing
+          new product experiences for their different in-house SaaS
+          applications.
         </h3>
+
         <PhotoCenter
           photo="assets/project_photos/APS-thumbnail.jpg"
           photoDescription="participants together"
         />
         <Paragraph
-          sectionH3="Being the 2nd person within APS to ever join as a designer, I took a leading role in developing a strong base for Design Research activities."
-          sectionP="Before joining APS, design research activities were rare, happened in an extreme rush, they were only survey based only confinded in doing surveys and   and there were no guidelines on how stakeholders could request research to be done."
+          sectionH3="Being only the 2nd person ever to join APS as a designer, I’ve taken a leading role in expanding and implementing design research activities within our development circles. "
+          sectionP="Before my arrival, design research within APS was rare and was heavily confined to simple surveys. I’ve had the chance to introduce new design research methods such as focus groups and 1-to-1 interviewing sessions. I’ve conducted multiple design research studies across different domains with clients, developers and business analysts and reported my findings to key stakeholders for further implementation. "
           position="self-end"
         />
         <PhotoSides
@@ -56,7 +57,7 @@ export const Aps = () => {
           position="lg:self-start"
         />
         <Paragraph
-          sectionH3="Being a multidisciplanary designer, I also took the role of the frontend developer within APS. My love for data, code and systemic thinking lead me to be part of several software development teams."
+          sectionH3=""
           sectionP="There, within these 15 months I have helped built real applications for clients and internal systems using the latest frontend development technologies such as React and Microfrontends."
           position="self-start"
         />

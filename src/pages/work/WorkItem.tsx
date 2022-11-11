@@ -31,7 +31,7 @@ export const WorkItem = (props: any) => {
 
       <div className="flex flex-row justify-between gap-5">
         <div className="flex justify-center">
-          <h4 className="projectList--project--year">{props.project.period}</h4>
+          <h4 className="projectList--project--year">{props.project.year}</h4>
         </div>
         <div className="flex flex-row justify-end gap-2">
           <h4 className="!text-white projectList--project--year">

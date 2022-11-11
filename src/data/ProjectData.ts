@@ -8,7 +8,35 @@ export const ProjectData: ProjectProperties[] = [
     year: 2022,
     thumbnail: `assets/project_photos/APS-thumbnail.jpg`,
     area: "Interaction Design & Web Development",
-    period: "2021 - Now / 15 months",
+    period: "August 2021 - Now",
+    type: "Work Experience",
+    company: "APS Group, IT Development",
+    place: "Eindhoven, NL",
+    time: "15 months",
+    text: {
+      header: `APS Group is a marketing communication company with a strong presence
+      in digital and print marketing material production. I joined their IT
+      Development team with a focus on researching, designing and developing
+      new product experiences for their different in-house SaaS
+      applications.`,
+      sectionA: {
+        header: `Being only the 2nd person ever to join APS as a designer, 
+        I’ve taken a leading role in expanding and implementing design 
+        research activities within our development circles.`,
+        paragraph: `Before my arrival, design research within APS was rare and was heavily 
+        confined to simple surveys. I’ve had the chance to introduce new design research methods such as focus groups and 1-to-1 interviewing sessions.
+         I’ve conducted multiple design research studies across different domains with clients, developers and business 
+        analysts and reported my findings to key stakeholders for further implementation.`,
+      },
+      sectionB: {
+        header: "",
+        paragraph: "",
+      },
+      sectionC: {
+        header: "",
+        paragraph: "",
+      },
+    },
   },
   {
     index: 1,
@@ -17,7 +45,23 @@ export const ProjectData: ProjectProperties[] = [
     year: 2022,
     thumbnail: `assets/project_photos/making-thumbnail.jpg`,
     area: "Workshop",
-    period: "2022 / 7 days",
+    period: "August - September 2022",
+    type: "Workshop",
+    text: {
+      header: "",
+      sectionA: {
+        header: "",
+        paragraph: "",
+      },
+      sectionB: {
+        header: "",
+        paragraph: "",
+      },
+      sectionC: {
+        header: "",
+        paragraph: "",
+      },
+    },
   },
   {
     index: 2,
@@ -26,7 +70,23 @@ export const ProjectData: ProjectProperties[] = [
     year: 2022,
     thumbnail: "assets/project_photos/web-experiments-thumbnail.jpg",
     area: "UX/UI Design & Web Development",
-    period: "2021 - 2022 ",
+    period: "May 2021 - Now ",
+    type: "Personal Development",
+    text: {
+      header: "",
+      sectionA: {
+        header: "",
+        paragraph: "",
+      },
+      sectionB: {
+        header: "",
+        paragraph: "",
+      },
+      sectionC: {
+        header: "",
+        paragraph: "",
+      },
+    },
   },
   {
     index: 3,
@@ -35,7 +95,23 @@ export const ProjectData: ProjectProperties[] = [
     year: 2018,
     thumbnail: "assets/project_photos/dataDriven-thumbnail.jpg",
     area: "Interaction Design",
-    period: "2018 / 6 months",
+    period: "September 2018 - January 2019",
+    type: "Master Course",
+    text: {
+      header: "",
+      sectionA: {
+        header: "",
+        paragraph: "",
+      },
+      sectionB: {
+        header: "",
+        paragraph: "",
+      },
+      sectionC: {
+        header: "",
+        paragraph: "",
+      },
+    },
   },
   {
     index: 4,
@@ -44,7 +120,23 @@ export const ProjectData: ProjectProperties[] = [
     year: 2018,
     thumbnail: "assets/project_photos/future-everyday-thumbnail.jpg",
     area: "Design Research",
-    period: "2018 / 5 months",
+    period: "April 2018 - July 2018",
+    type: "Master Course",
+    text: {
+      header: "",
+      sectionA: {
+        header: "",
+        paragraph: "",
+      },
+      sectionB: {
+        header: "",
+        paragraph: "",
+      },
+      sectionC: {
+        header: "",
+        paragraph: "",
+      },
+    },
   },
   {
     index: 5,
@@ -53,7 +145,23 @@ export const ProjectData: ProjectProperties[] = [
     year: 2018,
     thumbnail: "assets/project_photos/rituals-thumbnail.jpg",
     area: "Interaction Design",
-    period: "2018 / 5 months",
+    period: "January 2018 - April 2018",
+    type: "Master Course",
+    text: {
+      header: "",
+      sectionA: {
+        header: "",
+        paragraph: "",
+      },
+      sectionB: {
+        header: "",
+        paragraph: "",
+      },
+      sectionC: {
+        header: "",
+        paragraph: "",
+      },
+    },
   },
   {
     index: 6,
@@ -62,7 +170,23 @@ export const ProjectData: ProjectProperties[] = [
     year: 2019,
     thumbnail: "assets/project_photos/prototyping-thumbnail.jpg",
     area: "Interaction Design",
-    period: "2018 - 2020",
+    period: "June 2018 - January 2020",
+    type: "Personal Development",
+    text: {
+      header: "",
+      sectionA: {
+        header: "",
+        paragraph: "",
+      },
+      sectionB: {
+        header: "",
+        paragraph: "",
+      },
+      sectionC: {
+        header: "",
+        paragraph: "",
+      },
+    },
   },
   {
     index: 7,
@@ -71,7 +195,23 @@ export const ProjectData: ProjectProperties[] = [
     year: 2018,
     thumbnail: "assets/project_photos/designIdentities-thumbnail.jpg",
     area: "Design Research",
-    period: "2018 / 6 months",
+    period: "January 2018 - June 2018",
+    type: "Master Project",
+    text: {
+      header: "",
+      sectionA: {
+        header: "",
+        paragraph: "",
+      },
+      sectionB: {
+        header: "",
+        paragraph: "",
+      },
+      sectionC: {
+        header: "",
+        paragraph: "",
+      },
+    },
   },
   {
     index: 8,
@@ -80,7 +220,23 @@ export const ProjectData: ProjectProperties[] = [
     year: 2017,
     thumbnail: "assets/project_photos/audioTales-thumbnail.jpg",
     area: "Interaction Design",
-    period: "2017 / 6 months",
+    period: "Septmber 2017 - January 2018",
+    type: "Master Project",
+    text: {
+      header: "",
+      sectionA: {
+        header: "",
+        paragraph: "",
+      },
+      sectionB: {
+        header: "",
+        paragraph: "",
+      },
+      sectionC: {
+        header: "",
+        paragraph: "",
+      },
+    },
   },
   {
     index: 9,
@@ -89,15 +245,22 @@ export const ProjectData: ProjectProperties[] = [
     year: 2016,
     thumbnail: "assets/project_photos/FBP-thumbnail.jpg",
     area: "Design Research",
-    period: "2016 ",
-  },
-  {
-    index: 10,
-    path: "AsparagusProject",
-    title: "Request for Asparagus",
-    year: 2016,
-    thumbnail: "assets/project_photos/asparagus-thumbnail.jpg",
-    area: "Product Design",
-    period: "2016 ",
+    period: "September 2016 - January 2017",
+    type: "Bachelor Thesis",
+    text: {
+      header: "",
+      sectionA: {
+        header: "",
+        paragraph: "",
+      },
+      sectionB: {
+        header: "",
+        paragraph: "",
+      },
+      sectionC: {
+        header: "",
+        paragraph: "",
+      },
+    },
   },
 ];
