@@ -2,7 +2,7 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { animated, useTransition, config } from "react-spring";
-import { Navbar } from "../components/navbar/Navbar";
+import { Navbar } from "../components/Navbar";
 
 const Mount = () => {
   const [show, set] = useState<boolean>(false);
