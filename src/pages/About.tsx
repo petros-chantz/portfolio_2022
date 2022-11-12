@@ -1,9 +1,11 @@
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const About = () => {
   return (
-    <section className="px-10 py-20 my-10 lg:my-32 xl:px-32 desktop:px-52">
-      <div className="flex flex-col gap-5">
+    <section className="px-10 py-20 my-10 lg:my-52 xl:px-32 desktop:px-52">
+      <div className="flex flex-col gap-10">
         <motion.div
           className="flex justify-center md:justify-start lg:self-end lg:w-2/3"
           initial={{ opacity: 0 }}
@@ -90,7 +92,7 @@ export const About = () => {
             duration: 2,
           }}
         >
-          <h3>"Show me don't tell me" mindset.</h3>
+          <h3>"Show me, don't tell me" mindset.</h3>
           <p>
             Experiences are always felt, never described. Designing meaninful
             experiences is not an act of the head or the tongue. Designing is
@@ -139,11 +141,35 @@ export const About = () => {
             duration: 2,
           }}
         >
-          <div className="flex flex-col gap-2">
-            <h2 className="self-start">Writing</h2>
-            <h2 className="self-start">Vision in design</h2>
-            <h2 className="self-start">Contact</h2>
-          </div>
+          <motion.div
+            className="flex flex-col gap-10"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              type: "linear",
+              stiffness: 300,
+              damping: 2,
+              duration: 2,
+            }}
+          >
+            {[
+              ["Writing", "https://medium.com/@petros.chantz"],
+              ["Vision", ""],
+            ].map(([linkTitle, url]) => (
+              <div className="flex flex-row self-start gap-2 group">
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="self-center"
+                >
+                  {linkTitle}
+                </a>
+                <ArrowRightIcon className="self-center w-10 h-10 text-white transition duration-700 opacity-0 group-hover:opacity-100 group-hover:translate-x-6" />
+              </div>
+            ))}
+          </motion.div>
         </motion.div>
       </div>
     </section>
