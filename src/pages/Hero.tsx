@@ -1,29 +1,6 @@
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { animated, useTransition, config } from "react-spring";
 import { Navbar } from "../components/Navbar";
-
-const Mount = () => {
-  const [show, set] = useState<boolean>(false);
-  const transitions = useTransition(show, {
-    from: { opacity: 0.1 },
-    enter: { opacity: 1 },
-    leave: { opacity: 0.1 },
-    reverse: show,
-    delay: 1200,
-    config: config.molasses,
-    onRest: () => set(!show),
-  });
-  return transitions(
-    (styles, item) =>
-      item && (
-        <animated.div className="flex justify-center h-5" style={styles}>
-          <ChevronDownIcon className="self-center w-10 h-10 text-white" />
-        </animated.div>
-      )
-  );
-};
 
 export const Hero = () => {
   return (
@@ -60,7 +37,20 @@ export const Hero = () => {
             </span>
           </h1>
         </motion.div>
-        {Mount()}
+        <motion.div
+          className="flex justify-center h-5"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            type: "linear",
+            stiffness: 300,
+            damping: 2,
+            delay: 2,
+            duration: 3.5,
+          }}
+        >
+          <ChevronDownIcon className="self-center w-10 h-10 text-white transition ease-linear delay-1000 animate-pulse" />
+        </motion.div>
       </section>
     </motion.div>
   );

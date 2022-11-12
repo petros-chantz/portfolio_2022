@@ -1,19 +1,19 @@
-import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-import { Link } from "react-router-dom";
+import { ArrowRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 
 export const Project = (props: any) => {
   return (
-    <Link
+    <a
       className={`flex flex-col gap-5 group lg:w-3/5 h-screen -mb-32 even:self-start odd:self-end`}
-      to={`/${props.project.path}`}
+      href={props.project.path}
       key={props.project.index}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <div className="flex flex-row justify-start gap-2">
-        <h3 className="group-hover:opacity-100 opacity-70">
-          {props.project.title}
-        </h3>
-        <ArrowUpRightIcon className="self-center text-white w-7 h-7 group-hover:opacity-100 opacity-70" />
+        <h3>{props.project.title}</h3>
+        {/* <ArrowUpRightIcon className="self-center text-white w-7 h-7 group-hover:opacity-100 opacity-70" /> */}
+        <ArrowRightIcon className="self-center w-10 h-10 text-white transition duration-700 opacity-0 group-hover:opacity-100 group-hover:translate-x-6" />
       </div>
 
       <motion.div
@@ -39,6 +39,6 @@ export const Project = (props: any) => {
           </h4>
         </div>
       </div>
-    </Link>
+    </a>
   );
 };
