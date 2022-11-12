@@ -19,7 +19,7 @@ export const Work = () => {
       >
         <h1>Work</h1>
         <h2>
-          A selection of different{" "}
+          A selection of diverse and{" "}
           <span className="lg:block">multidisciplanary projects.</span>
         </h2>
       </motion.div>

@@ -56,8 +56,8 @@ export const About = () => {
             I research, explore, prototype and develop new modalities of
             interactions. I love translating (often) abstract and ambiguous
             user/stakeholder needs and wishes into straightforward interaction
-            requirements for tech teams. I work within multidisciplinary and
-            diverse teams and projects.
+            requirements for tech teams. I thrive in multidisciplinary teams and
+            love to work around competent, skillful and inspiring professionals.
           </p>
         </motion.div>
         <motion.div
@@ -92,13 +92,15 @@ export const About = () => {
         >
           <h3>"Show me don't tell me" mindset.</h3>
           <p>
-            Experiences are always felt, never described. We can't claim to
-            design meaningful interactions when we haven't experience them
-            ourselves first. In my work I always experience what I'm designing,
-            letting the experience inform the design process and decisions. When
-            I feel my own experience is starting to become contaminated with
-            biases then I test, test and test my designs with users and
-            stakeholders.
+            Experiences are always felt, never described. Designing meaninful
+            experiences is not an act of the head or the tongue. Designing is
+            doing, an action that is experienced again and again and being in
+            action with the experience. We can't claim to design meaningful
+            interactions when we haven't experience them ourselves first. In my
+            work I always experience what I'm designing, letting the experience
+            inform the design process and decisions. When I feel my own
+            experience is starting to become contaminated with biases then I
+            test, test and test my designs with users and stakeholders.
           </p>
         </motion.div>
         <motion.div
@@ -124,6 +126,24 @@ export const About = () => {
             stakeholders as well I make sure every interaction is accessible and
             responsive in the frontend for all of our users.
           </p>
+        </motion.div>
+        <motion.div
+          className="flex flex-col self-end gap-5 pt-20 lg:pt-32 md:gap-10 lg:w-2/3"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "linear",
+            stiffness: 300,
+            damping: 2,
+            duration: 2,
+          }}
+        >
+          <div className="flex flex-col gap-2">
+            <h2 className="self-start">Writing</h2>
+            <h2 className="self-start">Vision in design</h2>
+            <h2 className="self-start">Contact</h2>
+          </div>
         </motion.div>
       </div>
     </section>
