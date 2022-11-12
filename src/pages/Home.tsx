@@ -1,8 +1,8 @@
 import React from "react";
-import { Footer } from "../components/footer/Footer";
-import { About } from "./about/About";
+import { Footer } from "../components/Footer";
+import { About } from "./About";
 import { Hero } from "./Hero";
-import { Work } from "./work/Work";
+import { Work } from "./Work";
 
 export const Home = () => {
   return (
