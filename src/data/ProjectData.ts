@@ -37,6 +37,21 @@ export const ProjectData: ProjectProperties[] = [
         paragraph: "",
       },
     },
+    photos: {
+      center: "assets/project_photos/APS-thumbnail.jpg",
+      column: {
+        first: "assets/project_photos/APS/01.jpg",
+        second: "assets/project_photos/APS/02.jpg",
+        third: "assets/project_photos/APS/03.jpg",
+      },
+      bottom: {
+        center: "assets/project_photos/APS/06.png",
+        together: {
+          first: "",
+          second: "",
+        },
+      },
+    },
   },
   {
     index: 1,
@@ -60,6 +75,21 @@ export const ProjectData: ProjectProperties[] = [
       sectionC: {
         header: "",
         paragraph: "",
+      },
+    },
+    photos: {
+      center: "",
+      column: {
+        first: "",
+        second: "",
+        third: "",
+      },
+      bottom: {
+        center: "",
+        together: {
+          first: "",
+          second: "",
+        },
       },
     },
   },
@@ -87,6 +117,21 @@ export const ProjectData: ProjectProperties[] = [
         paragraph: "",
       },
     },
+    photos: {
+      center: "",
+      column: {
+        first: "",
+        second: "",
+        third: "",
+      },
+      bottom: {
+        center: "",
+        together: {
+          first: "",
+          second: "",
+        },
+      },
+    },
   },
   {
     index: 3,
@@ -110,6 +155,21 @@ export const ProjectData: ProjectProperties[] = [
       sectionC: {
         header: "",
         paragraph: "",
+      },
+    },
+    photos: {
+      center: "",
+      column: {
+        first: "",
+        second: "",
+        third: "",
+      },
+      bottom: {
+        center: "",
+        together: {
+          first: "",
+          second: "",
+        },
       },
     },
   },
@@ -137,6 +197,21 @@ export const ProjectData: ProjectProperties[] = [
         paragraph: "",
       },
     },
+    photos: {
+      center: "",
+      column: {
+        first: "",
+        second: "",
+        third: "",
+      },
+      bottom: {
+        center: "",
+        together: {
+          first: "",
+          second: "",
+        },
+      },
+    },
   },
   {
     index: 5,
@@ -160,6 +235,21 @@ export const ProjectData: ProjectProperties[] = [
       sectionC: {
         header: "",
         paragraph: "",
+      },
+    },
+    photos: {
+      center: "",
+      column: {
+        first: "",
+        second: "",
+        third: "",
+      },
+      bottom: {
+        center: "",
+        together: {
+          first: "",
+          second: "",
+        },
       },
     },
   },
@@ -187,6 +277,21 @@ export const ProjectData: ProjectProperties[] = [
         paragraph: "",
       },
     },
+    photos: {
+      center: "",
+      column: {
+        first: "",
+        second: "",
+        third: "",
+      },
+      bottom: {
+        center: "",
+        together: {
+          first: "",
+          second: "",
+        },
+      },
+    },
   },
   {
     index: 7,
@@ -210,6 +315,21 @@ export const ProjectData: ProjectProperties[] = [
       sectionC: {
         header: "",
         paragraph: "",
+      },
+    },
+    photos: {
+      center: "",
+      column: {
+        first: "",
+        second: "",
+        third: "",
+      },
+      bottom: {
+        center: "",
+        together: {
+          first: "",
+          second: "",
+        },
       },
     },
   },
@@ -237,6 +357,21 @@ export const ProjectData: ProjectProperties[] = [
         paragraph: "",
       },
     },
+    photos: {
+      center: "",
+      column: {
+        first: "",
+        second: "",
+        third: "",
+      },
+      bottom: {
+        center: "",
+        together: {
+          first: "",
+          second: "",
+        },
+      },
+    },
   },
   {
     index: 9,
@@ -260,6 +395,21 @@ export const ProjectData: ProjectProperties[] = [
       sectionC: {
         header: "",
         paragraph: "",
+      },
+    },
+    photos: {
+      center: "",
+      column: {
+        first: "",
+        second: "",
+        third: "",
+      },
+      bottom: {
+        center: "",
+        together: {
+          first: "",
+          second: "",
+        },
       },
     },
   },

@@ -12,4 +12,5 @@ export interface ProjectProperties {
   time?: string;
   stakeholder?: string;
   text: any;
+  photos: any;
 }
