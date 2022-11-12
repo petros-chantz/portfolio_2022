@@ -1,4 +1,4 @@
-import { ArrowRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
 
 export const Project = (props: any) => {
@@ -12,7 +12,6 @@ export const Project = (props: any) => {
     >
       <div className="flex flex-row justify-start gap-2">
         <h3>{props.project.title}</h3>
-        {/* <ArrowUpRightIcon className="self-center text-white w-7 h-7 group-hover:opacity-100 opacity-70" /> */}
         <ArrowRightIcon className="self-center w-10 h-10 text-white transition duration-700 opacity-0 group-hover:opacity-100 group-hover:translate-x-6" />
       </div>
 
