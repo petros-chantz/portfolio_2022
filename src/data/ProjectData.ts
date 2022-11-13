@@ -3,7 +3,7 @@ import { ProjectProperties } from "../interfaces/ProjectProperties.interface";
 export const ProjectData: ProjectProperties[] = [
   {
     index: 0,
-    path: "APSGroup",
+    path: "https://medium.com/@petros.chantz/aps-group-f2bcc8dbda8",
     title: "APS Group",
     year: 2022,
     thumbnail: `assets/project_photos/aps.jpg`,
@@ -11,20 +11,20 @@ export const ProjectData: ProjectProperties[] = [
   },
   {
     index: 1,
-    path: "MakingWorkshop",
+    path: "https://medium.com/@petros.chantz/model-making-in-the-digital-age-da898e124b73",
     title: "Model Making in the Digital Age",
     year: 2022,
     thumbnail: `assets/project_photos/workshop.jpg`,
     area: "Workshop",
   },
-  {
-    index: 2,
-    path: "Experiments",
-    title: "Digital Design Experiments",
-    year: 2021,
-    thumbnail: "assets/project_photos/experiments.jpg",
-    area: "UX/UI Design & Web Development",
-  },
+  // {
+  //   index: 2,
+  //   path: "Experiments",
+  //   title: "Digital Design Experiments",
+  //   year: 2021,
+  //   thumbnail: "assets/project_photos/experiments.jpg",
+  //   area: "UX/UI Design & Web Development",
+  // },
   {
     index: 3,
     path: "DataDrivenDesign",

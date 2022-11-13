@@ -56,9 +56,9 @@ export const About = () => {
           <p>
             I research, explore, prototype and develop new modalities of
             interactions. I love translating (often) abstract and ambiguous
-            user/stakeholder needs and wishes into straightforward interaction
+            user/stakeholder needs and wishes into detailed interaction
             requirements for tech teams. I thrive in multidisciplinary teams and
-            love to work around competent, skillful and inspiring professionals.
+            enjoy working in diverse projects and domains.
           </p>
         </motion.div>
         <motion.div
@@ -93,15 +93,14 @@ export const About = () => {
         >
           <h3>"Show me, don't tell me" mindset.</h3>
           <p>
-            Experiences are always felt, never described. Designing meaninful
-            experiences is not an act of the head or the tongue. Designing is
-            doing, an action that is experienced again and again and being in
-            action with the experience. We can't claim to design meaningful
-            interactions when we haven't experience them ourselves first. In my
-            work I always experience what I'm designing, letting the experience
-            inform the design process and decisions. When I feel my own
-            experience is starting to become contaminated with biases then I
-            test, test and test my designs with users and stakeholders.
+            Experiences are always felt, never described. Designing meaningful
+            interactions is an act of doing, not an act of “gut feelings”. In my
+            work, I’m in constant dialogue with what I’m designing or
+            researching. I’m letting that experience inform my design process
+            and let it guide me towards making decisions. When I feel my own
+            experiences are becoming contaminated with opinions or biases then I
+            test, test and test again and again, my designs with real users,
+            stakeholders or other designers.
           </p>
         </motion.div>
         <motion.div
@@ -121,11 +120,11 @@ export const About = () => {
             <h3 className="self-start">I work at APS Group.</h3>
           </div>
           <p className="self-start">
-            There, I'm working as a multidisciplinary designer working along
-            with UX/UI designers and developers on an upcoming SaaS product.
-            help with investigating new product features with our clients and
-            stakeholders as well I make sure every interaction is accessible and
-            responsive in the frontend for all of our users.
+            There, I’m working as a design researcher and multidisciplinary
+            designer in the cross domain design team. I’m responsible for
+            identifying needs, wishes and pain points within our products and I
+            conduct design research activities with our external and internal
+            clients.
           </p>
         </motion.div>
         <motion.div
