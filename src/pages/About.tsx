@@ -149,22 +149,21 @@ export const About = () => {
               duration: 2,
             }}
           >
-            {[
-              ["Writing", "https://medium.com/@petros.chantz"],
-              ["Vision", ""],
-            ].map(([linkTitle, url]) => (
-              <div className="flex flex-row self-start gap-2 group">
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="self-center"
-                >
-                  {linkTitle}
-                </a>
-                <ArrowRightIcon className="self-center w-10 h-10 text-white transition duration-700 opacity-0 group-hover:opacity-100 group-hover:translate-x-6" />
-              </div>
-            ))}
+            {[["Writing", "https://medium.com/@petros.chantz"]].map(
+              ([linkTitle, url]) => (
+                <div className="flex flex-row self-start gap-2 group">
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="self-center"
+                  >
+                    {linkTitle}
+                  </a>
+                  <ArrowRightIcon className="self-center w-10 h-10 text-white transition duration-700 opacity-0 group-hover:opacity-100 group-hover:translate-x-6" />
+                </div>
+              )
+            )}
           </motion.div>
         </motion.div>
       </div>
