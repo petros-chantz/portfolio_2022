@@ -4,20 +4,20 @@ import { Navbar } from "../components/Navbar";
 
 export const Hero = () => {
   return (
-    <motion.div className="flex flex-col h-screen">
+    <motion.div
+      className="flex flex-col h-screen"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        type: "linear",
+        stiffness: 300,
+        damping: 2,
+        duration: 3.5,
+      }}
+    >
       <Navbar />
       <section className="flex flex-col h-full px-10 py-10">
-        <motion.div
-          className="flex justify-center h-95"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            type: "linear",
-            stiffness: 300,
-            damping: 2,
-            duration: 3.5,
-          }}
-        >
+        <div className="flex justify-center h-95">
           <h1 className="self-center hidden lg:inline-block">
             Delivering rich meaningful
             <span className="block">experiences by connecting </span>
@@ -36,21 +36,10 @@ export const Hero = () => {
               <span className="font-bold">technology</span>.
             </span>
           </h1>
-        </motion.div>
-        <motion.div
-          className="flex justify-center h-5"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            type: "linear",
-            stiffness: 300,
-            damping: 2,
-            delay: 2,
-            duration: 3.5,
-          }}
-        >
+        </div>
+        <div className="flex justify-center h-5">
           <ChevronDownIcon className="self-center w-10 h-10 text-white transition ease-linear delay-1000 animate-pulse" />
-        </motion.div>
+        </div>
       </section>
     </motion.div>
   );

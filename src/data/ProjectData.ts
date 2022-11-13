@@ -7,7 +7,7 @@ export const ProjectData: ProjectProperties[] = [
     title: "APS Group",
     year: 2022,
     thumbnail: `assets/project_photos/aps.jpg`,
-    area: "Interaction Design & Web Development",
+    area: "Design Research & Interaction Design",
   },
   {
     index: 1,
@@ -31,7 +31,7 @@ export const ProjectData: ProjectProperties[] = [
     title: "Data Driven Design",
     year: 2018,
     thumbnail: "assets/project_photos/driven.jpg",
-    area: "Interaction Design",
+    area: "Design Research",
   },
   {
     index: 4,
@@ -55,7 +55,7 @@ export const ProjectData: ProjectProperties[] = [
     title: "Exploratory Prototyping",
     year: 2019,
     thumbnail: "assets/project_photos/prototyping.jpg",
-    area: "Interaction Design",
+    area: "Interaction Design & Prototyping",
   },
   {
     index: 7,

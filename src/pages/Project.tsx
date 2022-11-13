@@ -3,12 +3,21 @@ import { motion } from "framer-motion";
 
 export const Project = (props: any) => {
   return (
-    <a
+    <motion.a
       className={`flex flex-col gap-5 group lg:w-3/5 h-screen -mb-32 even:self-start odd:self-end`}
       href={props.project.path}
       key={props.project.index}
       target="_blank"
       rel="noopener noreferrer"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        type: "linear",
+        stiffness: 300,
+        damping: 2,
+        duration: 2,
+      }}
     >
       <div className="flex flex-row justify-start gap-2">
         <h3>{props.project.title}</h3>
@@ -38,6 +47,6 @@ export const Project = (props: any) => {
           </h4>
         </div>
       </div>
-    </a>
+    </motion.a>
   );
 };

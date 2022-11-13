@@ -95,12 +95,10 @@ export const About = () => {
           <p>
             Experiences are always felt, never described. Designing meaningful
             interactions is an act of doing, not an act of “gut feelings”. In my
-            work, I’m in constant dialogue with what I’m designing or
-            researching. I’m letting that experience inform my design process
-            and let it guide me towards making decisions. When I feel my own
-            experiences are becoming contaminated with opinions or biases then I
-            test, test and test again and again, my designs with real users,
-            stakeholders or other designers.
+            work, experience and interaction take central role in informing my
+            design process and the design decisions I make. I don't design
+            things for myself, thus testing soon and often with real people is
+            my modus operandi.
           </p>
         </motion.div>
         <motion.div
