@@ -1,6 +1,6 @@
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 import { ProjectData } from "../data/ProjectData";
@@ -8,8 +8,6 @@ import { ProjectData } from "../data/ProjectData";
 export const ProjectPage = () => {
   const { path } = useParams();
   const projectItem = ProjectData.find((project) => project.path === path);
-
-  console.log(projectItem);
 
   return (
     <motion.section
@@ -104,14 +102,9 @@ export const ProjectPage = () => {
 
         <div className="flex flex-row self-end justify-end gap-2 pb-10 group">
           <ArrowLeftIcon className="self-center w-10 h-10 text-white transition duration-700 opacity-0 group-hover:opacity-100 group-hover:-translate-x-6" />
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="self-center"
-          >
+          <Link to="/" className="self-center">
             Back
-          </a>
+          </Link>
         </div>
       </section>
 
