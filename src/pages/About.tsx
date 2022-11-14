@@ -150,8 +150,11 @@ export const About = () => {
             }}
           >
             {[["Writing", "https://medium.com/@petros.chantz"]].map(
-              ([linkTitle, url]) => (
-                <div className="flex flex-row self-start gap-2 group">
+              ([linkTitle, url], index) => (
+                <div
+                  className="flex flex-row self-start gap-2 group"
+                  key={index}
+                >
                   <a
                     href={url}
                     target="_blank"
