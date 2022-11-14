@@ -5,10 +5,8 @@ export const Project = (props: any) => {
   return (
     <motion.a
       className={`flex flex-col gap-5 group lg:w-3/5 h-screen -mb-32 even:self-start odd:self-end`}
-      href={props.project.path}
+      href={`/${props.project.path}`}
       key={props.project.index}
-      target="_blank"
-      rel="noopener noreferrer"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
