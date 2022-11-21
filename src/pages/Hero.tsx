@@ -19,7 +19,7 @@ export const Hero = () => {
       <section className="flex flex-col h-full px-10 py-10">
         <div className="flex justify-center h-95">
           <h1 className="self-center hidden lg:inline-block">
-            Delivering rich meaningful
+            Designing rich meaningful
             <span className="block">experiences by connecting </span>
             <span className="block">
               {" "}
