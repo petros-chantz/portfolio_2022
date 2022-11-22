@@ -10,9 +10,8 @@ export const Footer = () => {
       whileInView={{ opacity: 1 }}
       transition={{
         type: "linear",
-        stiffness: 300,
-        damping: 2,
-        duration: 2,
+        stiffness: 70,
+        duration: 0.7,
       }}
     >
       <div className="w-1/3 pb-5 border-t-2 border-t-white"></div>

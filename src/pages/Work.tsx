@@ -1,5 +1,5 @@
-import { ProjectData } from "../data/ProjectData";
-import { Project } from "./Project";
+import { WorkData } from "../data/WorkData";
+import { WorkExperience } from "./WorkExperience";
 
 export const Work = () => {
   return (
@@ -11,9 +11,9 @@ export const Work = () => {
           <span className="lg:block">over the years.</span>
         </h2>
       </div>
-      <div className="flex flex-col gap-48 pt-20 lg:pt-32 lg:gap-52">
-        {ProjectData.sort((a, b) => b.year - a.year).map((project, index) => (
-          <Project project={project} key={index} />
+      <div className="flex flex-col pt-20 gap-28 lg:pt-32">
+        {WorkData.sort((a, b) => b.year - a.year).map((project, index) => (
+          <WorkExperience project={project} key={index} />
         ))}
       </div>
     </section>
