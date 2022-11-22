@@ -35,6 +35,21 @@
     &--title {
       @apply self-center text-xl md:text-2xl font-normal z-10 tracking-wide text-white;
     }
+    &--icon {
+      @apply w-10 h-10 text-white self-center;
+    }
+
+    &--list {
+      @apply absolute z-10 flex flex-col self-end w-full h-screen bg-black/80 md:bg-black/70 top-0 backdrop-blur-lg;
+
+      &--link {
+        @apply self-end tracking-wide text-7xl leading-tight text-white font-light xl:leading-tight desktop:text-8xl;
+      }
+
+      &--text {
+        @apply self-end text-xl font-light tracking-wide text-white xl:text-2xl selection:bg-white selection:text-black;
+      }
+    }
   }
 
   a {
