@@ -4,9 +4,6 @@ export const About = () => {
   return (
     <section className="px-10 py-5 xl:px-32 desktop:px-52">
       <div className="flex flex-col gap-10">
-        <div className="flex justify-center md:justify-start lg:self-end lg:w-2/3">
-          <h2 className="self-center lg:self-end">Hey! I'm Petros!</h2>
-        </div>
         <div className="flex justify-start md:justify-start lg:self-end lg:w-2/3 ">
           <img
             alt="petros-profile"

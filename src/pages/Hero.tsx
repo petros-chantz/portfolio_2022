@@ -17,9 +17,10 @@ export const Hero = () => {
     >
       <Navbar />
       <section className="flex flex-col h-full px-10 py-10">
-        <div className="flex justify-center h-95">
+        <div className="flex flex-col justify-center h-95">
           <h1 className="self-center hidden lg:inline-block">
-            Designing rich meaningful
+            Hey, I'm Petros!
+            <span className="block">I'm designing rich meaningful</span>
             <span className="block">experiences by connecting </span>
             <span className="block">
               {" "}
