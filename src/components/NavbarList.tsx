@@ -15,7 +15,7 @@ export const NavbarList = () => {
         <div className="flex flex-col gap-10 pt-32">
           {[
             ["public work", "/publicWork"],
-            ["vision", "/vision", "ready"],
+            ["vision", "/ComingSoon", "ready"],
           ].map(([title, url, ready], index: number) => (
             <Link
               to={url}

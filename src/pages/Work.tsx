@@ -11,7 +11,7 @@ export const Work = () => {
           <span className="lg:block">over the years.</span>
         </h2>
       </div>
-      <div className="flex flex-col pt-20 gap-28 lg:pt-32">
+      <div className="flex flex-col gap-20 pt-20 lg:pt-10">
         {WorkData.sort((a, b) => b.year - a.year).map((project, index) => (
           <WorkExperience project={project} key={index} />
         ))}
