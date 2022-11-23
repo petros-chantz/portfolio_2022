@@ -10,7 +10,7 @@ export const Home = () => {
         <h2 className="self-start">Petros Chantzopoulos</h2>
         <p>
           <span className="block">
-            I'm an interaction designer creating rich meaninful
+            I'm an interaction designer creating rich meaningful
           </span>
           <span className="block">
             experiences by connecting{" "}
@@ -23,7 +23,7 @@ export const Home = () => {
             Currently, I work for <span className="font-medium">APS Group</span>{" "}
             where I'm designing
           </span>
-          <span className="block">and researching new SaaS experiences.</span>
+          <span className="block">and researching new SaaS products.</span>
         </p>
         <Link
           to={"/about"}
