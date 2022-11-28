@@ -24,7 +24,7 @@ export const Navbar = () => {
         >
           <ArrowUpRightIcon className="self-center w-7 h-7 md:w-10 md:h-10 transition group-hover:rotate-45 text-white group-hover:text-[#EE793B]" />
           <h3 className="self-center group-hover:underline group-hover:text-[#EE793B]">
-            Writing
+            Blog
           </h3>
         </a>
       </div>

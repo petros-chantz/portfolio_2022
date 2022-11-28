@@ -7,17 +7,32 @@
   html {
     font-family: "Inter", sans-serif;
     background-color: black;
+    color: white;
   }
 
   h2 {
-    @apply text-5xl font-medium text-white desktop:text-6xl;
+    @apply text-5xl font-medium  desktop:text-6xl;
   }
 
   h3 {
-    @apply text-xl lg:text-3xl font-medium md:font-normal text-white desktop:text-4xl;
+    @apply text-xl lg:text-3xl font-medium md:font-normal  desktop:text-4xl;
   }
 
   p {
-    @apply text-white lg:text-2xl text-xl lg:leading-9 font-light lg:font-thin;
+    @apply lg:text-2xl text-xl lg:leading-9 font-light lg:font-thin;
   }
+}
+
+.about {
+  &--name {
+    @apply text-3xl md:text-5xl font-medium  desktop:text-6xl;
+  }
+
+  &--subtitle {
+    @apply text-4xl self-start leading-normal font-medium desktop:text-4xl;
+  }
+}
+
+.socialIcons {
+  @apply w-8 h-8;
 }
