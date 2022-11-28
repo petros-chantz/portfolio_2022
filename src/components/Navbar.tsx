@@ -10,7 +10,7 @@ export const Navbar = () => {
           ["Public Work", "/projects"],
         ].map(([title, url]) => (
           <Link className="flex flex-row justify-start gap-2 group" to={url}>
-            <PlusIcon className="self-center w-10 h-10 text-white transition group-hover:rotate-180 group-hover:text-[#EE793B]" />
+            <PlusIcon className="self-center w-7 h-7 md:w-10 md:h-10 text-white transition group-hover:rotate-180 group-hover:text-[#EE793B]" />
             <h3 className="self-center group-hover:underline group-hover:text-[#EE793B]">
               {title}
             </h3>
@@ -22,7 +22,7 @@ export const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <ArrowUpRightIcon className="self-center w-10 h-10 transition group-hover:rotate-45 text-white group-hover:text-[#EE793B]" />
+          <ArrowUpRightIcon className="self-center w-7 h-7 md:w-10 md:h-10 transition group-hover:rotate-45 text-white group-hover:text-[#EE793B]" />
           <h3 className="self-center group-hover:underline group-hover:text-[#EE793B]">
             Writing
           </h3>

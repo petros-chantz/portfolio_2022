@@ -10,14 +10,14 @@
   }
 
   h2 {
-    @apply text-5xl font-medium text-white;
+    @apply text-5xl font-medium text-white desktop:text-6xl;
   }
 
   h3 {
-    @apply text-3xl font-normal text-white;
+    @apply text-xl lg:text-3xl font-medium md:font-normal text-white desktop:text-4xl;
   }
 
   p {
-    @apply text-white text-2xl font-thin;
+    @apply text-white lg:text-2xl text-xl lg:leading-9 font-light lg:font-thin;
   }
 }
