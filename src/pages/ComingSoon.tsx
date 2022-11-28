@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { Footer } from "../components/Footer";
-import { Navbar } from "../components/Navbar";
+import { Exit } from "../components/Exit";
 
 export const ComingSoon = () => {
   return (
     <motion.section
+      className="flex flex-col h-screen gap-10 p-5 md:p-10"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -15,11 +15,12 @@ export const ComingSoon = () => {
         duration: 2,
       }}
     >
-      <Navbar />
-      <section className="flex flex-col justify-center gap-32 px-10 py-32 md:gap-52 lg:px-32 md:my-20">
-        <h1 className="self-center font-bold">Coming Soon!</h1>
+      <Exit />
+      <section className="flex flex-col self-center justify-center pt-10 h-95">
+        <h1 className="self-center text-5xl font-medium md:text-7xl">
+          Coming Soon!
+        </h1>
       </section>
-      <Footer />
     </motion.section>
   );
 };

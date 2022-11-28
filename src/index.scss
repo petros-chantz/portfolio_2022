@@ -7,52 +7,32 @@
   html {
     font-family: "Inter", sans-serif;
     background-color: black;
-  }
-
-  h1 {
-    @apply text-5xl md:text-7xl leading-tight text-white font-light xl:leading-tight xl:text-8xl selection:bg-white selection:text-black;
+    color: white;
   }
 
   h2 {
-    @apply text-4xl md:text-5xl leading-tight text-white font-light xl:leading-tight xl:text-6xl selection:bg-white selection:text-black;
+    @apply text-5xl font-medium  desktop:text-6xl;
   }
 
   h3 {
-    @apply text-3xl leading-tight text-white font-light xl:leading-tight xl:text-4xl selection:bg-white selection:text-black;
-  }
-
-  h4 {
-    @apply text-xl lg:text-2xl font-light lg:leading-relaxed selection:bg-white selection:text-black;
+    @apply text-xl lg:text-3xl font-medium md:font-normal  desktop:text-4xl;
   }
 
   p {
-    @apply text-base md:text-xl lg:text-2xl leading-relaxed font-light lg:leading-relaxed text-slate-400 selection:bg-white selection:text-black;
+    @apply lg:text-2xl text-xl lg:leading-9 font-light lg:font-thin;
+  }
+}
+
+.about {
+  &--name {
+    @apply text-3xl md:text-5xl font-medium  desktop:text-6xl;
   }
 
-  .navbar {
-    @apply flex flex-col py-10;
-
-    &--title {
-      @apply self-center text-xl md:text-2xl font-normal z-10 tracking-wide text-white;
-    }
-  }
-
-  a {
-    @apply text-4xl md:text-5xl leading-tight text-white font-light xl:leading-tight xl:text-6xl selection:bg-white selection:text-black;
+  &--subtitle {
+    @apply text-4xl self-start leading-normal font-medium desktop:text-4xl;
   }
 }
 
 .socialIcons {
-  @apply w-8 h-8 lg:w-10 lg:h-10;
-}
-
-.projectList {
-  &--project {
-    &--year {
-      @apply self-center text-base md:text-xl xl:text-2xl text-slate-400 group-hover:opacity-100 opacity-70 font-extralight;
-    }
-    &--title {
-      @apply self-center text-base md:text-xl xl:text-2xl text-white group-hover:opacity-100 opacity-70;
-    }
-  }
+  @apply w-8 h-8;
 }

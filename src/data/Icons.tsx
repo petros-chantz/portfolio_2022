@@ -1,6 +1,6 @@
-import Github from "../social_icons/Github";
-import LinkedIn from "../social_icons/LinkedIn";
-import Twitter from "../social_icons/Twitter";
+import Github from "../assets/social_icons/Github";
+import LinkedIn from "../assets/social_icons/LinkedIn";
+import Twitter from "../assets/social_icons/Twitter";
 import { IconsProperties } from "../interfaces/IconProperties.interface";
 
 export const Icons: IconsProperties[] = [

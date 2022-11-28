@@ -1,98 +1,81 @@
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
+import { Copyright } from "../components/Copyright";
+import { Exit } from "../components/Exit";
+import { Icons } from "../data/Icons";
 
 export const About = () => {
   return (
-    <section className="px-10 py-20 my-10 lg:my-52 xl:px-32 desktop:px-52">
-      <div className="flex flex-col gap-10">
-        <motion.div
-          className="flex justify-center md:justify-start lg:self-end lg:w-2/3"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{
-            type: "linear",
-            stiffness: 300,
-            damping: 2,
-            duration: 2,
-          }}
-        >
-          <h2 className="self-center lg:self-end">Hey! I'm Petros!</h2>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{
-            type: "linear",
-            stiffness: 300,
-            damping: 2,
-            duration: 2,
-          }}
-          className="flex justify-center md:justify-start lg:self-end lg:w-2/3 "
-        >
-          <img
-            alt="petros-profile"
-            src="assets/profile-photo.jpg"
-            className="self-center w-2/3 md:w-2/4 md:self-start"
-          />
-        </motion.div>
-        <motion.div
-          className="flex flex-col self-end gap-5 pt-20 md:gap-10 lg:w-2/3"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{
-            type: "linear",
-            stiffness: 300,
-            damping: 2,
-            duration: 2,
-          }}
-        >
-          <h3>
-            I'm interested in the connection between the physical and the
-            digital world.
-          </h3>
-          <p>
+    <motion.section
+      className="flex flex-col p-5 md:p-10"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        type: "linear",
+        stiffness: 300,
+        damping: 2,
+        duration: 2,
+      }}
+    >
+      <Exit />
+      <div className="flex flex-col self-center gap-20 py-20 md:w-2/3 desktop:w-2/4">
+        <div className="flex flex-col gap-10 lg:flex-row">
+          <div className="self-center w-2/3 lg:w-1/3">
+            <img src="assets/profile-photo.jpg" alt="petros" />
+          </div>
+          <div className="flex flex-col justify-start gap-5 md:justify-between">
+            <div className="flex flex-col gap-2 md:gap-5">
+              <p className="about--name">Petros Chantzopoulos</p>
+              <p className="font-medium">Interaction & Product Designer</p>
+              <p className="text-base md:text-xl">
+                <span className="block">BSc. & MSc. Industrial Design</span>
+                <span className="block">
+                  {" "}
+                  Technical University of Eindhoven, TU/e
+                </span>
+              </p>
+            </div>
+            <div className="flex flex-col gap-5">
+              <p className="text-base md:text-xl">
+                petros.chantzopoulos [at] gmail [dot] com
+              </p>
+              <p className="text-base md:text-xl">+31 6513 two 14 nine 0</p>
+              <div className="flex flex-row ">
+                <div className="flex flex-row gap-7">
+                  {Icons.map((icon: any, index: number) => {
+                    return (
+                      <a
+                        href={icon.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        key={`item-${index}`}
+                        aria-label="social media links"
+                      >
+                        {icon.img}
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col gap-3 md:pt-24">
+          <p className="about--subtitle">
+            I’m interested in the connection between the physical & the digital
+            world.
+          </p>
+          <p className="leading-10">
             I research, explore, prototype and develop new modalities of
             interactions. I love translating (often) abstract and ambiguous
             user/stakeholder needs and wishes into detailed interaction
             requirements for tech teams. I thrive in multidisciplinary teams and
             enjoy working in diverse projects and domains.
           </p>
-        </motion.div>
-        <motion.div
-          className="flex pt-32 bg-center lg:self-start lg:w-2/3"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{
-            type: "linear",
-            stiffness: 300,
-            damping: 2,
-            duration: 2,
-          }}
-        >
-          <img
-            src="assets/about.jpg"
-            alt="petros making things"
-            className=" md:self-start"
-          />
-        </motion.div>
-        <motion.div
-          className="flex flex-col self-start gap-5 pt-5 md:gap-10 lg:w-2/3"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{
-            type: "linear",
-            stiffness: 300,
-            damping: 2,
-            duration: 2,
-          }}
-        >
-          <h3>"Show me, don't tell me" mindset.</h3>
-          <p>
+        </div>
+        <div className="flex flex-col gap-3">
+          <p className="about--subtitle">"Show me, don't tell me" mindset.</p>
+          <p className="leading-10">
             Experiences are always felt, never described. Designing meaningful
             interactions is an act of doing, not an act of “gut feelings”. In my
             work, experience and interaction take central role in informing my
@@ -100,76 +83,11 @@ export const About = () => {
             things for myself, thus testing soon and often with real people is
             my modus operandi.
           </p>
-        </motion.div>
-        <motion.div
-          className="flex flex-col self-end gap-5 pt-20 lg:pt-32 md:gap-10 lg:w-2/3"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{
-            type: "linear",
-            stiffness: 300,
-            damping: 2,
-            duration: 2,
-          }}
-        >
-          <div className="flex flex-col gap-2">
-            <h3 className="self-start">Currently,</h3>
-            <h3 className="self-start">I work at APS Group.</h3>
-          </div>
-          <p className="self-start">
-            There, I’m working as a design researcher and multidisciplinary
-            designer in the cross domain design team. I’m responsible for
-            identifying needs, wishes and pain points within our products and I
-            conduct design research activities with our external and internal
-            clients.
-          </p>
-        </motion.div>
-        <motion.div
-          className="flex flex-col self-end gap-5 pt-20 lg:pt-32 md:gap-10 lg:w-2/3"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{
-            type: "linear",
-            stiffness: 300,
-            damping: 2,
-            duration: 2,
-          }}
-        >
-          <motion.div
-            className="flex flex-col gap-10"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              type: "linear",
-              stiffness: 300,
-              damping: 2,
-              duration: 2,
-            }}
-          >
-            {[["Writing", "https://medium.com/@petros.chantz"]].map(
-              ([linkTitle, url], index) => (
-                <div
-                  className="flex flex-row self-start gap-2 group"
-                  key={index}
-                >
-                  <a
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="self-center"
-                  >
-                    {linkTitle}
-                  </a>
-                  <ArrowRightIcon className="self-center w-10 h-10 text-white transition duration-700 opacity-0 group-hover:opacity-100 group-hover:translate-x-6" />
-                </div>
-              )
-            )}
-          </motion.div>
-        </motion.div>
+        </div>
       </div>
-    </section>
+      <Copyright />
+    </motion.section>
   );
 };
+
+export default About;
