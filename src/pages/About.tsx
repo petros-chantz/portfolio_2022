@@ -20,8 +20,8 @@ export const About = () => {
       <Exit />
       <div className="flex flex-col self-center gap-20 py-20 md:w-2/3 desktop:w-2/4">
         <div className="flex flex-col gap-10 lg:flex-row">
-          <div className="self-center w-2/3 lg:w-1/3">
-            <img src="assets/profile-photo.jpg" alt="petros" />
+          <div className="self-center w-2/3 grayscale lg:w-1/3">
+            <img src="assets/profile-photo.jpg" alt="petros" loading="lazy" />
           </div>
           <div className="flex flex-col justify-start gap-5 md:justify-between">
             <div className="flex flex-col gap-2 md:gap-5">
@@ -37,7 +37,7 @@ export const About = () => {
             </div>
             <div className="flex flex-col gap-5">
               <p className="text-base md:text-xl">
-                petros.chantzopoulos [at] gmail [dot] com
+                petros.chantz [at] gmail [dot] com
               </p>
               <p className="text-base md:text-xl">+31 6513 two 14 nine 0</p>
               <div className="flex flex-row ">
