@@ -19,15 +19,15 @@ export const Home = () => {
             <span className="font-medium">data.</span>
           </span>
         </p>
-        <p className="lg:hidden">
-          <span className="block">I'm an interaction designer creating</span>
-          <span className="block">rich meaningful experiences by</span>
+        <p className="text-lg lg:hidden">
           <span className="block">
-            connecting <span className="font-bold">design</span> &{" "}
-            <span className="font-bold">technology</span>
-            <span className="block">
-              & <span className="font-bold"> data.</span>
-            </span>
+            I'm an interaction designer creating rich
+          </span>
+          <span className="block">meaningful experiences by connecting </span>
+          <span className="block">
+            <span className="font-bold">design</span> &{" "}
+            <span className="font-bold">technology</span> &{" "}
+            <span className="font-bold"> data.</span>
           </span>
         </p>
         <p className="flex-col hidden lg:flex">
@@ -39,12 +39,13 @@ export const Home = () => {
             researching and developing new SaaS products.
           </span>
         </p>
-        <p className="lg:hidden">
+        <p className="text-lg lg:hidden">
           <span className="block">
             Currently, I work for <span className="font-bold">APS Group</span>{" "}
+            where
           </span>
-          <span className="block"> where I'm designing, researching and</span>
-          <span className="block">developing new SaaS products.</span>
+          <span className="block">I'm designing, researching & developing</span>
+          <span className="block">new SaaS products.</span>
         </p>
         <Link
           to={"/about"}
