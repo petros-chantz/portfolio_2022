@@ -35,7 +35,7 @@ export const Restricted = () => {
               petros.chantz [at] gmail [dot] com
             </span>{" "}
             I can send you an up-to-date "secret" portfolio, showcasing some
-            elements of these restricted projects.
+            elements of these restricted projects that I'm allowed to share.
           </span>
         </h3>
       </section>

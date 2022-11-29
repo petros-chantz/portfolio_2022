@@ -1,12 +1,9 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { Copyright } from "../components/Copyright";
 import { Exit } from "../components/Exit";
 import { Icons } from "../data/Icons";
 
 export const About = () => {
-  const [isLoading, setLoading] = useState(true);
-
   return (
     <motion.section
       className="flex flex-col p-5 md:p-10"
