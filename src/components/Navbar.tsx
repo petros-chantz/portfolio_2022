@@ -6,7 +6,7 @@ export const Navbar = () => {
     <nav className="flex justify-end h-[20%] ">
       <div className="flex flex-col self-center gap-2">
         {[
-          ["Work Experience", "/comingSoon"],
+          ["Work Experience", "/work"],
           ["Public Work", "/comingSoon"],
           ["Restricted Work", "/restricted"],
         ].map(([title, url]) => (
