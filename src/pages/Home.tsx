@@ -15,7 +15,8 @@ export const Home = () => {
           <span className="block">
             experiences by connecting{" "}
             <span className="font-medium">design</span> &{" "}
-            <span className="font-medium">technology.</span>{" "}
+            <span className="font-medium">technology</span> &{" "}
+            <span className="font-medium">data.</span>
           </span>
         </p>
         <p className="lg:hidden">
@@ -23,23 +24,27 @@ export const Home = () => {
           <span className="block">rich meaningful experiences by</span>
           <span className="block">
             connecting <span className="font-bold">design</span> &{" "}
-            <span className="font-bold">technology.</span>{" "}
+            <span className="font-bold">technology</span>
+            <span className="block">
+              & <span className="font-bold"> data.</span>
+            </span>
           </span>
-          <span className="block"></span>
         </p>
         <p className="flex-col hidden lg:flex">
           <span className="block">
             Currently, I work for <span className="font-medium">APS Group</span>{" "}
-            where I'm designing
+            where I'm designing,
           </span>
-          <span className="block">and researching new SaaS products.</span>
+          <span className="block">
+            researching and developing new SaaS products.
+          </span>
         </p>
         <p className="lg:hidden">
           <span className="block">
             Currently, I work for <span className="font-bold">APS Group</span>{" "}
           </span>
-          <span className="block"> where I'm designing and researching</span>
-          <span className="block">new SaaS products.</span>
+          <span className="block"> where I'm designing, researching and</span>
+          <span className="block">developing new SaaS products.</span>
         </p>
         <Link
           to={"/about"}
