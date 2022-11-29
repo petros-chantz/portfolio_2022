@@ -37,7 +37,7 @@ export const About = () => {
             </div>
             <div className="flex flex-col gap-5">
               <p className="text-base md:text-xl">
-                petros.chantzopoulos [at] gmail [dot] com
+                petros.chantz [at] gmail [dot] com
               </p>
               <p className="text-base md:text-xl">+31 6513 two 14 nine 0</p>
               <div className="flex flex-row ">
