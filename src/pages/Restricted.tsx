@@ -19,22 +19,22 @@ export const Restricted = () => {
     >
       <Exit />
       <section className="flex flex-col self-center md:w-[80%] gap-20 pt-20 md:pt-52 desktop:pt-80 md:h-95">
-        <div className="flex flex-col self-start gap-10 md:flex-row">
-          <EyeSlashIcon className="self-center w-20 h-20" />
-          <h1 className="self-start text-5xl font-medium md:self-center md:text-7xl">
+        <div className="flex flex-col self-start justify-center gap-10 md:flex-row">
+          <EyeSlashIcon className="self-center w-20 h-20 md:w-32 md:h-32" />
+          <h1 className="self-start text-5xl font-medium md:leading-snug md:self-center md:text-7xl">
             Unfortunatelly, great designs
             <span className="block">can't always be made public.</span>
           </h1>
         </div>
         <h3 className="leading-10 font-extralight">
-          Due to NDA aggreements, a lot of my latest professional work can't be
+          Due to NDA agreements, a lot of my latest professional work can't be
           displayed in public.{" "}
           <span className="block pt-10 md:inline md:pt-0">
             However, if you contact me at{" "}
             <span className="font-medium">
               petros.chantz [at] gmail [dot] com
             </span>{" "}
-            I can send you an up-to-date detailed portfolio showcasing some
+            I can send you an up-to-date "secret" portfolio, showcasing some
             elements of these restricted projects.
           </span>
         </h3>
