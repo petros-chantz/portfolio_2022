@@ -8,6 +8,7 @@ export const Navbar = () => {
         {[
           ["Work Experience", "/comingSoon"],
           ["Public Work", "/comingSoon"],
+          ["Restricted Work", "/restricted"],
         ].map(([title, url]) => (
           <Link className="flex flex-row justify-start gap-2 group" to={url}>
             <PlusIcon className="self-center w-7 h-7 md:w-10 md:h-10 text-white transition group-hover:rotate-180 group-hover:text-[#EE793B]" />
