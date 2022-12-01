@@ -27,14 +27,14 @@ export const Work = () => {
       }}
     >
       <Exit />
-      <section className="flex flex-col pt-20 pb-20 md:pb-32">
-        <div className="flex flex-col gap-5 md:pl-20">
+      <section className="flex flex-col pt-24 pb-20 md:pb-32">
+        <div className="flex flex-col gap-5 pb-5 md:pb-20 md:pl-20">
           <h2 className="self-center md:self-start">Work Experience</h2>
           <div className="flex flex-row justify-between gap-5">
             <p>My professional career over the years.</p>
           </div>
         </div>
-        <div className="flex flex-col self-center gap-20 pt-24 lg:w-2/3">
+        <div className="flex flex-col self-center gap-20 pt-10 md:pt-24 md:gap-32 lg:w-2/3">
           {WorkData.sort((a, b) => b.year - a.year).map((project, index) => (
             <a
               href={`/${project.path}`}
