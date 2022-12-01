@@ -29,7 +29,7 @@ export const Restricted = () => {
         <h3 className="leading-10 font-extralight">
           Due to NDA agreements, a lot of my latest professional work can't be
           displayed in public.{" "}
-          <span className="block pt-10 md:inline md:pt-0">
+          <span className="block pt-10 md:inline md:pt-0 desktop:pt-10 desktop:block">
             However, if you contact me at{" "}
             <span className="font-medium">
               petros.chantz [at] gmail [dot] com

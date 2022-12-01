@@ -1,9 +1,16 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { Copyright } from "../components/Copyright";
 import { Exit } from "../components/Exit";
 import { Icons } from "../data/Icons";
 
 export const About = () => {
+  const [loaded, setLoaded] = useState<boolean>(false);
+
+  const HandleLoadedStatus = () => {
+    setLoaded(true);
+  };
+
   return (
     <motion.section
       className="flex flex-col p-5 md:p-10"
@@ -21,7 +28,16 @@ export const About = () => {
       <div className="flex flex-col self-center gap-20 py-20 md:w-2/3 desktop:w-2/4">
         <div className="flex flex-col gap-10 lg:flex-row">
           <div className="self-center w-2/3 grayscale lg:w-1/3">
-            <img src="assets/profile-photo.jpg" alt="petros" loading="lazy" />
+            <img
+              src="assets/profile-photo.jpg"
+              alt="petros"
+              className={`${
+                loaded
+                  ? "grayscale-0 blur-0 scale-100"
+                  : "grayscale blur-2xl scale-110"
+              }`}
+              onLoad={HandleLoadedStatus}
+            />
           </div>
           <div className="flex flex-col justify-start gap-5 md:justify-between">
             <div className="flex flex-col gap-2 md:gap-5">

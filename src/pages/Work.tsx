@@ -1,11 +1,18 @@
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Copyright } from "../components/Copyright";
 import { Exit } from "../components/Exit";
 import { WorkData } from "../data/WorkData";
 
 export const Work = () => {
+  const [loaded, setLoaded] = useState<boolean>(false);
+
+  const HandleLoadedStatus = () => {
+    setLoaded(true);
+  };
+
   return (
     <motion.section
       className="flex flex-col p-5 md:p-10"
@@ -48,7 +55,12 @@ export const Work = () => {
                 <img
                   src={project.thumbnail}
                   alt={`work-${project.company}`}
-                  className="z-0 object-cover object-center w-full hover:opacity-100 opacity-60"
+                  className={`z-0 object-cover object-center w-full hover:opacity-100 opacity-60 ${
+                    loaded
+                      ? "grayscale-0 blur-0 scale-100"
+                      : "grayscale blur-2xl scale-110"
+                  }`}
+                  onLoad={HandleLoadedStatus}
                 />
               </motion.div>
               <div className="flex flex-col gap-2 md:justify-between md:flex-row">
@@ -63,7 +75,7 @@ export const Work = () => {
       </section>
       <div className="flex self-end justify-center pb-20">
         <Link
-          to={"/comingSoon"}
+          to={"/public"}
           className="flex flex-row justify-center gap-2 group"
         >
           <h1 className="text-5xl font-medium md:text-7xl group-hover:underline group-hover:text-[#EE793B]">
