@@ -51,7 +51,7 @@ export const Home = () => {
           to={"/about"}
           className="flex flex-row self-start justify-start gap-2 pt-10 group"
         >
-          <ArrowRightIcon className="self-center w-7 h-7 md:w-10 md:h-10 text-white group-hover:text-[#EE793B]" />
+          <ArrowRightIcon className="self-center w-7 h-7 md:w-10 md:h-10 transition group-hover:translate-x-2 text-white group-hover:text-[#EE793B]" />
           <h3 className="self-center group-hover:underline group-hover:text-[#EE793B]">
             About me / Contact
           </h3>

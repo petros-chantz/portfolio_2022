@@ -2,67 +2,12 @@ import { ProjectProperties } from "../interfaces/ProjectProperties.interface";
 
 export const ProjectData: ProjectProperties[] = [
   {
-    index: 0,
-    path: "APSGroup",
-    title: "APS Group",
-    subtitle: "August 2021 - now | Work Experience",
-    year: 2022,
-    thumbnail: `assets/project_photos/aps/aps.jpg`,
-    area: "Design Research & Interaction Design",
-    keywords: [
-      "Design Research",
-      "Interaction Design",
-      "System Design",
-      "B2B Workflows",
-    ],
-    company: "APS Group, IT Development",
-    place: "Eindhoven, NL",
-    time: "16 months",
-    text: {
-      header: `APS Group is a marketing communication company with a strong presence 
-      in content creation, marketing material production and print management. I 
-      joined their IT Development team with a focus on researching and designing 
-      new product experiences for their different in-house SaaS applications.`,
-      middle: {
-        h3: `Being only the 2nd person ever to join APS as a designer, 
-        I’ve taken a leading role in expanding and implementing design 
-        research activities within the department.`,
-        p: `Before my arrival, design research within APS was rare and 
-        was heavily confined to doing small simple surveys that led to 
-        little to no actionable outcomes. To better fit the demands and 
-        needs of the department, I introduced more appropriate design 
-        research methods such as focus groups, 1-to-1 interviewing and 
-        diary studies. I also identified early on that stakeholders need 
-        help acknowledging when and how to involve design research. Thus, 
-        I created new procedures for them to request help or plan discovery sessions.`,
-      },
-      end: {
-        h3: `Almost 16 months later, I’ve conducted numerous design research studies 
-        with international clients, brands and internal stakeholders. `,
-        p: `A great highlight 
-        of my career within APS has been the development of personas and the relationships 
-        between them. By insisting on and advocating for data-driven personas to stakeholders, 
-        managers and business analysts, we have now a better and clearer view of the 
-        opportunities and challenges we’re facing.`,
-      },
-    },
-    photos: {
-      center: `assets/project_photos/aps/aps.jpg`,
-      section: {
-        a: `assets/project_photos/aps/teams.jpg`,
-        b: `assets/project_photos/aps/results.jpg`,
-        c: `assets/project_photos/aps/interview.jpg`,
-      },
-    },
-  },
-  {
-    index: 1,
-    path: "Workshop",
+    path: "comingSoon",
     title: "Model Making in the Digital Age",
     subtitle: "August - September 2022 | Workshop",
     year: 2022,
     thumbnail: `assets/project_photos/workshop/workshop.jpg`,
-    area: "Workshop",
+    area: "Summer Workshop",
     keywords: [
       "Digital Fabrication",
       "Product Design",
@@ -104,13 +49,12 @@ export const ProjectData: ProjectProperties[] = [
     },
   },
   {
-    index: 3,
-    path: "DataDrivenDesign",
+    path: "comingSoon",
     title: "Data Driven Design",
     subtitle: "September 2018 - January 2019 | Master Course",
     year: 2019,
     thumbnail: "assets/project_photos/driven/driven.png",
-    area: "Design Research",
+    area: "Design Research - Interaction Design",
     keywords: [
       "Design Research",
       "Data Driven Design",
@@ -148,13 +92,12 @@ export const ProjectData: ProjectProperties[] = [
     },
   },
   {
-    index: 4,
-    path: "ComingSoon",
+    path: "comingSoon",
     title: "Researching the Future Everyday",
     subtitle: "April 2018 - July 2018 | Master Course",
     year: 2018,
     thumbnail: "assets/project_photos/everyday/future.jpg",
-    area: "Design Research",
+    area: "Smart IoT Devices - Design Research",
     keywords: [
       "Design Research",
       "Speculative Design",
@@ -208,13 +151,12 @@ export const ProjectData: ProjectProperties[] = [
     },
   },
   {
-    index: 5,
-    path: "ComingSoon",
+    path: "comingSoon",
     title: "Composing Everyday Rituals",
     subtitle: "January 2018 - April 2018 | Master Course",
     year: 2018,
     thumbnail: "assets/project_photos/rituals/rituals.jpg",
-    area: "Interaction Design",
+    area: "Service & Interaction Design",
     keywords: [
       "Service Research",
       "Interaction Design",
@@ -270,13 +212,12 @@ export const ProjectData: ProjectProperties[] = [
   //   area: "Interaction Design & Prototyping",
   // },
   {
-    index: 7,
     path: "ComingSoon",
     title: "Researching Design Identities",
     subtitle: "January 2018 - June 2018 | Master Project",
     year: 2018,
     thumbnail: "assets/project_photos/identities/identities.jpg",
-    area: "Design Research",
+    area: "Design Toolkit - Design Research",
     keywords: ["Design Research", "Design Toolkits"],
     company: "Technical University of Eindhoven TU/e",
     place: "Eindhoven, NL",
@@ -319,13 +260,12 @@ export const ProjectData: ProjectProperties[] = [
     },
   },
   {
-    index: 8,
     path: "ComingSoon",
     title: "Designing Smart IoT Experiences",
     subtitle: "September 2017 - January 2018 | Master Project",
     year: 2017,
     thumbnail: "assets/project_photos/audio/audio.jpg",
-    area: "Interaction Design",
+    area: "Systemic Design - Smart IoT Homes",
     keywords: [
       "Interaction Design",
       "Systemic Design",
@@ -373,13 +313,65 @@ export const ProjectData: ProjectProperties[] = [
     },
   },
   {
-    index: 9,
-    path: "ComingSoon",
+    path: "comingSoon",
     title: "Researching Future Retail Experiences",
     subtitle: "September 2016 - January 2017 | Final Bachelor Project",
     year: 2016,
     thumbnail: "assets/project_photos/fbp/fbp.jpg",
-    area: "Design Research",
+    area: "Interaction - Product Design",
+    keywords: [
+      "Speculative Design",
+      "Design Research",
+      "Ultra-Personalised Fashion",
+      "Digital Fabrication",
+    ],
+    company: "Technical University of Eindhoven TU/e",
+    place: "Eindhoven, NL",
+    time: "5 months",
+    text: {
+      header: `APS Group is a marketing communication company with a strong presence 
+      in content creation, marketing material production and print management. I 
+      joined their IT Development team with a focus on researching and designing 
+      new product experiences for their different in-house SaaS applications.`,
+      middle: {
+        h3: `Being only the 2nd person ever to join APS as a designer, 
+        I’ve taken a leading role in expanding and implementing design 
+        research activities within the department.`,
+        p: `Before my arrival, design research within APS was rare and 
+        was heavily confined to doing small simple surveys that led to 
+        little to no actionable outcomes. To better fit the demands and 
+        needs of the department, I introduced more appropriate design 
+        research methods such as focus groups, 1-to-1 interviewing and 
+        diary studies. I also identified early on that stakeholders need 
+        help acknowledging when and how to involve design research. Thus, 
+        I created new procedures for them to request help or plan discovery sessions.`,
+      },
+      end: {
+        h3: `Almost 16 months later, I’ve conducted numerous design research studies 
+        with international clients, brands and internal stakeholders. `,
+        p: `A great highlight 
+        of my career within APS has been the development of personas and the relationships 
+        between them. By insisting on and advocating for data-driven personas to stakeholders, 
+        managers and business analysts, we have now a better and clearer view of the 
+        opportunities and challenges we’re facing.`,
+      },
+    },
+    photos: {
+      center: `assets/project_photos/audio/audio.jpg`,
+      section: {
+        a: `assets/project_photos/audio/teams.jpg`,
+        b: `assets/project_photos/audio/results.jpg`,
+        c: `assets/project_photos/audio/interview.jpg`,
+      },
+    },
+  },
+  {
+    path: "comingSoon",
+    title: "Request for Asparagus",
+    subtitle: "September 2016 - January 2017 | Final Bachelor Project",
+    year: 2016,
+    thumbnail: "assets/project_photos/render.jpg",
+    area: "Product Design & Fabrication",
     keywords: [
       "Speculative Design",
       "Design Research",
